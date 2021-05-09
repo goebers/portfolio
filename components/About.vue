@@ -48,6 +48,10 @@ export default {
   flex: 0 0 100%;
 }
 
+.picture-wrapper {
+  text-align: center;
+}
+
 .picture {
   max-width: 100%;
   height: auto;
@@ -55,12 +59,10 @@ export default {
 
 .desc-wrapper {
   .title {
-    font-size: $font-title-mobile;
     margin-bottom: 1.5rem;
   }
 
   .paragraph {
-    font-size: $font-paragraph-mobile;
     margin-bottom: 0.75rem;
   }
 }
@@ -90,12 +92,7 @@ export default {
     margin: 0 1em;
 
     .title {
-      font-size: $font-title;
       margin-bottom: 2rem;
-    }
-
-    .paragraph {
-      font-size: $font-paragraph;
     }
   }
 }

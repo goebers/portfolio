@@ -1,19 +1,54 @@
 <template>
-  <div class="footer-wrapper">
-    footer
+  <div class="footer">
+    <div class="footer-left">
+      <p class="small-paragraph">
+        Site created using Nuxt.js and served using GitHub pages.
+      </p>
+    </div>
+    <div class="footer-center">
+      <p class="small-paragraph">
+        Socials
+      </p>
+    </div>
+    <div class="footer-right">
+      <p class="small-paragraph">
+        © Robert Laitila {{ currentYear }}
+      </p>
+    </div>
   </div>
 </template>
 <script>
 export default {
-  name: 'Footer'
+  name: 'Footer',
+  data () {
+    return {
+      currentYear: new Date().getFullYear()
+    }
+  }
 }
 </script>
 <style lang="scss">
-.footer-wrapper {
+.footer {
   display: flex;
-  width: 100%;
-  position: -webkit-sticky;
-  position: sticky;
-  bottom: 0;
+  flex-direction: column;
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+  flex: 1 0 100%;
+}
+
+@media only screen and (min-width: $breakpoint-large-mobile) {
+  .footer {
+    flex-direction: row;
+  }
+
+  .footer-left,
+  .footer-center,
+  .footer-right {
+    text-align: center;
+    flex: 1 0 33%;
+  }
 }
 </style>

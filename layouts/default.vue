@@ -1,6 +1,7 @@
 <template>
   <div class="default-layout">
-    <Nuxt />
+    <Nuxt class="content-wrapper" />
+    <Footer class="footer-wrapper" />
   </div>
 </template>
 
@@ -26,5 +27,14 @@ html {
 
 h1 {
   font-weight: $font-weight-bold;
+}
+
+.content-wrapper {
+  padding: 1.5em 2.5em;
+}
+
+.footer-wrapper {
+  background-color: lightgray;
+  padding: 1.5em 2.5em;
 }
 </style>

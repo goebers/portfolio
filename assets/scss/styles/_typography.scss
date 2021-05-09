@@ -1,0 +1,28 @@
+.title {
+  font-size: $font-title-mobile;
+  margin-bottom: 1.5rem;
+}
+
+.paragraph {
+  font-size: $font-paragraph-mobile;
+  margin-bottom: 0.75rem;
+}
+
+.small-paragraph {
+  font-size: $font-small-paragraph-mobile;
+}
+
+@media only screen and (min-width: $breakpoint-small-desktop) {
+  .title {
+    font-size: $font-title;
+    margin-bottom: 2rem;
+  }
+
+  .paragraph {
+    font-size: $font-paragraph;
+  }
+
+  .small-paragraph {
+    font-size: $font-small-paragraph;
+  }
+}
