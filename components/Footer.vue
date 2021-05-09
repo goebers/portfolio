@@ -11,9 +11,9 @@ export default {
 <style lang="scss">
 .footer-wrapper {
   display: flex;
-  position: sticky;
-  position: -webkit-sticky;
-  bottom: 0;
   width: 100%;
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
 }
 </style>

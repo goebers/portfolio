@@ -1,6 +1,11 @@
 <template>
-  <div class="container">
-    <Header />
+  <div class="index-page">
+    <div class="content">
+      <h1 class="site-title">
+        Robert Laitila
+      </h1>
+      <About />
+    </div>
     <Footer />
   </div>
 </template>
@@ -10,15 +15,27 @@ export default {}
 </script>
 
 <style lang="scss">
-* {
-  font-family: 'Roboto', sans-serif;
+.index-page {
+  padding: 1.5em 2.5em;
+  width: 100%;
 }
 
-.container {
+.site-title {
+  font-size: $font-site-mobile;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 0.25em;
+}
+
+.content {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  padding: 1.5em 2.5em;
   min-height: 100vh;
+}
+
+@media only screen and (min-width: $breakpoint-small-desktop) {
+  .site-title {
+    font-size: $font-site;
+  }
 }
 </style>
