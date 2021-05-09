@@ -1,5 +1,5 @@
 <template>
-  <div class="about-wrapper">
+  <div class="about">
     <div class="picture-wrapper">
       <img class="picture" src="@/static/img/me.jpg">
     </div>
@@ -37,7 +37,7 @@ export default {
 }
 </script>
 <style lang="scss">
-.about-wrapper {
+.about {
   display: flex;
   flex-direction: column;
   max-width: 100%;
@@ -67,19 +67,8 @@ export default {
   }
 }
 
-.link {
-  text-decoration: none;
-  color: black;
-  font-style: italic;
-  font-weight: $font-weight-bold;
-
-  &:hover {
-    color: grey;
-  }
-}
-
 @media only screen and (min-width: $breakpoint-small-desktop) {
-  .about-wrapper {
+  .about {
     flex-direction: row;
   }
 

@@ -1,6 +1,26 @@
+html {
+  font-family: $font-family;
+  font-size: $font-default-size;
+  font-weight: $font-weight-default;
+  word-spacing: 1px;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: $font-weight-bold;
+}
+
 .title {
   font-size: $font-title-mobile;
-  margin-bottom: 1.5rem;
 }
 
 .paragraph {
@@ -12,10 +32,18 @@
   font-size: $font-small-paragraph-mobile;
 }
 
+.link {
+  text-decoration: underline;
+  color: #017698;
+
+  &:hover {
+    color: #005760;
+  }
+}
+
 @media only screen and (min-width: $breakpoint-small-desktop) {
   .title {
     font-size: $font-title;
-    margin-bottom: 2rem;
   }
 
   .paragraph {

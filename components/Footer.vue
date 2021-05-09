@@ -2,7 +2,22 @@
   <div class="footer">
     <div class="footer-left">
       <p class="small-paragraph">
-        Site created using Nuxt.js and served using GitHub pages.
+        Site created with
+        <a
+          class="link"
+          href="https://nuxtjs.org/"
+          target="_blank"
+        >
+          Nuxt.js
+        </a>
+        and served using
+        <a
+          class="link"
+          href="https://pages.github.com/"
+          target="_blank"
+        >
+          GitHub pages.
+        </a>
       </p>
     </div>
     <div class="footer-center">
