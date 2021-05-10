@@ -23,6 +23,10 @@ h6 {
   font-size: $font-title-mobile;
 }
 
+.small-title {
+  font-size: $font-small-title-mobile;
+}
+
 .paragraph {
   font-size: $font-paragraph-mobile;
   margin-bottom: 0.75rem;
@@ -34,7 +38,7 @@ h6 {
 
 .link {
   text-decoration: underline;
-  color: #017698;
+  color: $link-color;
 
   &:hover {
     color: #005760;
@@ -44,6 +48,10 @@ h6 {
 @media only screen and (min-width: $breakpoint-small-desktop) {
   .title {
     font-size: $font-title;
+  }
+
+  .small-title {
+    font-size: $font-small-title;
   }
 
   .paragraph {

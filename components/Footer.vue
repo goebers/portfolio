@@ -42,7 +42,7 @@ export default {
   }
 }
 </script>
-<style lang="scss">
+<style scoped lang="scss">
 .footer {
   display: flex;
   flex-direction: column;
@@ -57,13 +57,27 @@ export default {
 @media only screen and (min-width: $breakpoint-large-mobile) {
   .footer {
     flex-direction: row;
+    align-items: center;
   }
 
   .footer-left,
   .footer-center,
   .footer-right {
-    text-align: center;
+    display: flex;
     flex: 1 0 33%;
+    height: 100%;
+  }
+
+  .footer-left {
+    justify-content: flex-start;
+  }
+
+  .footer-center {
+    justify-content: center;
+  }
+
+  .footer-right {
+    justify-content: flex-end;
   }
 }
 </style>

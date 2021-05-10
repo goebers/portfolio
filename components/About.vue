@@ -1,7 +1,7 @@
 <template>
   <div class="about">
     <div class="picture-wrapper">
-      <img class="picture" src="@/static/img/me.jpg">
+      <img class="picture" src="@/static/img/me.jpg" alt="CV picture">
     </div>
     <div class="desc-wrapper">
       <h1 class="title">
@@ -36,7 +36,7 @@ export default {
   name: 'About'
 }
 </script>
-<style lang="scss">
+<style scoped lang="scss">
 .about {
   display: flex;
   flex-direction: column;
@@ -74,12 +74,14 @@ export default {
 
   .picture-wrapper,
   .desc-wrapper {
-    flex: 0 0 50%;
+    flex: 0 1 50%;
+  }
+
+  .picture-wrapper {
+    margin-right: 2em;
   }
 
   .desc-wrapper {
-    margin: 0 1em;
-
     .title {
       margin-bottom: 2rem;
     }

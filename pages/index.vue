@@ -4,7 +4,7 @@
       Robert Laitila
     </h1>
     <About class="about-wrapper" />
-    <Technologies class="technologies-wrapper" />
+    <Skills class="skills-wrapper" />
   </div>
 </template>
 
@@ -12,7 +12,7 @@
 export default {}
 </script>
 
-<style lang="scss">
+<style scoped lang="scss">
 .index-page {
   width: 100%;
   display: flex;
@@ -27,14 +27,14 @@ export default {}
 }
 
 .about-wrapper,
-.technology-wrapper {
+.skills-wrapper {
   margin-bottom: 1rem;
 }
 
 @media only screen and (min-width: $breakpoint-large-mobile) {
   .title,
   .about-wrapper,
-  .technology-wrapper {
+  .skills-wrapper {
     margin-bottom: 1.5rem;
   }
 }
