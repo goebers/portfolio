@@ -49,7 +49,9 @@ export default {
 }
 
 .picture-wrapper {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  // text-align: center;
 }
 
 .picture {
@@ -58,6 +60,10 @@ export default {
 }
 
 .desc-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
   .title {
     margin-bottom: 1.5rem;
   }
@@ -78,6 +84,7 @@ export default {
   }
 
   .picture-wrapper {
+    justify-content: flex-start;
     margin-right: 2em;
   }
 

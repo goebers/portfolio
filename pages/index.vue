@@ -1,5 +1,5 @@
 <template>
-  <div class="index-page">
+  <div class="index-page container">
     <h1 class="title">
       Robert Laitila
     </h1>

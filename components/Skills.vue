@@ -3,6 +3,9 @@
     <h1 class="title">
       Skills
     </h1>
+    <p class="paragraph">
+      Below are listed some technologies/programs that I have used previously, either in school or professional manner at work.
+    </p>
     <div class="tech-list">
       <h3 class="small-title">
         Front-end
@@ -15,7 +18,7 @@
     </div>
     <div class="tech-list">
       <h3 class="small-title">
-        Design-end
+        Design
       </h3>
     </div>
   </div>

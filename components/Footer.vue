@@ -1,34 +1,28 @@
 <template>
   <div class="footer">
-    <div class="footer-left">
-      <p class="small-paragraph">
-        Site created with
-        <a
-          class="link"
-          href="https://nuxtjs.org/"
-          target="_blank"
-        >
-          Nuxt.js
-        </a>
-        and served using
-        <a
-          class="link"
-          href="https://pages.github.com/"
-          target="_blank"
-        >
-          GitHub pages.
-        </a>
-      </p>
-    </div>
-    <div class="footer-center">
-      <p class="small-paragraph">
-        Socials
-      </p>
-    </div>
-    <div class="footer-right">
-      <p class="small-paragraph">
-        © Robert Laitila {{ currentYear }}
-      </p>
+    <div class="footer-content container">
+      <div class="footer-left">
+        <p class="small-paragraph">
+          Site created with
+          <a class="link" href="https://nuxtjs.org/" target="_blank">
+            Nuxt.js
+          </a>
+          and served using
+          <a class="link" href="https://pages.github.com/" target="_blank">
+            GitHub pages.
+          </a>
+        </p>
+      </div>
+      <div class="footer-center">
+        <p class="small-paragraph">
+          Socials
+        </p>
+      </div>
+      <div class="footer-right">
+        <p class="small-paragraph">
+          © Robert Laitila {{ currentYear }}
+        </p>
+      </div>
     </div>
   </div>
 </template>
@@ -43,7 +37,7 @@ export default {
 }
 </script>
 <style scoped lang="scss">
-.footer {
+.footer-content {
   display: flex;
   flex-direction: column;
 }
@@ -55,7 +49,7 @@ export default {
 }
 
 @media only screen and (min-width: $breakpoint-large-mobile) {
-  .footer {
+  .footer-content {
     flex-direction: row;
     align-items: center;
   }
