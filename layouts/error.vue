@@ -1,5 +1,5 @@
 <template>
-  <div class="error-layout">
+  <div class="error-layout container">
     <h1
       v-if="error.statusCode === 404"
       class="title"

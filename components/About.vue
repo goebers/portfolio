@@ -51,7 +51,6 @@ export default {
 .picture-wrapper {
   display: flex;
   justify-content: center;
-  // text-align: center;
 }
 
 .picture {
@@ -74,6 +73,18 @@ export default {
 }
 
 @media only screen and (min-width: $breakpoint-small-desktop) {
+  .desc-wrapper {
+    .title {
+      margin-bottom: 1.75rem;
+    }
+
+    .paragraph {
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+@media only screen and (min-width: $breakpoint-small-desktop) {
   .about {
     flex-direction: row;
   }
@@ -85,12 +96,16 @@ export default {
 
   .picture-wrapper {
     justify-content: flex-start;
-    margin-right: 2em;
+    padding-right: 2em;
   }
 
   .desc-wrapper {
     .title {
       margin-bottom: 2rem;
+    }
+
+    .paragraph {
+      margin-bottom: 1.25rem;
     }
   }
 }
