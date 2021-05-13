@@ -4,7 +4,7 @@
       Skills
     </h1>
     <p class="paragraph">
-      Below are listed some technologies & methods that I have used previously, and feel competent with, either in school or in professional manner at work.
+      Below are listed some technologies, methods & platforms that I have used previously, and feel competent with, either in school or in professional manner at work.
     </p>
     <div class="tech-list-wrapper">
       <ul class="tech-list">
@@ -66,7 +66,7 @@
       </ul>
       <ul class="tech-list">
         <h3 class="small-title">
-          VCS & package management
+          Version control
         </h3>
         <li class="small-paragraph">
           Git
@@ -75,10 +75,33 @@
           SVN
         </li>
         <li class="small-paragraph">
+          GitHub
+        </li>
+        <li class="small-paragraph">
+          Bitbucket
+        </li>
+        <li class="small-paragraph">
+          GitLab
+        </li>
+      </ul>
+      <ul class="tech-list">
+        <h3 class="small-title">
+          Depedency & package management
+        </h3>
+        <li class="small-paragraph">
           Node Package Manager
         </li>
         <li class="small-paragraph">
           Composer
+        </li>
+        <li class="small-paragraph">
+          Yarn
+        </li>
+        <li class="small-paragraph">
+          Homebrew
+        </li>
+        <li class="small-paragraph">
+          APT
         </li>
       </ul>
       <ul class="tech-list">
@@ -116,6 +139,20 @@
         </li>
         <li class="small-paragraph">
           PostgreSQL
+        </li>
+      </ul>
+      <ul class="tech-list">
+        <h3 class="small-title">
+          Operating systems
+        </h3>
+        <li class="small-paragraph">
+          Windows
+        </li>
+        <li class="small-paragraph">
+          Linux (Ubuntu & Manjaro)
+        </li>
+        <li class="small-paragraph">
+          MacOS
         </li>
       </ul>
       <ul class="tech-list">
