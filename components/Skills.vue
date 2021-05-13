@@ -4,18 +4,18 @@
       Skills
     </h1>
     <p class="paragraph">
-      Below are listed some technologies that I have used previously, either in school or professional manner at work.
+      Below are listed some technologies & methods that I have used previously, and feel competent with, either in school or in professional manner at work.
     </p>
     <div class="tech-list-wrapper">
       <ul class="tech-list">
         <h3 class="small-title">
-          Web front-end
+          Web
         </h3>
         <li class="small-paragraph">
           HTML, CSS & JS
         </li>
         <li class="small-paragraph">
-          Vue.js & Nuxt.js
+          Vue.js
         </li>
         <li class="small-paragraph">
           Angular 2
@@ -24,13 +24,13 @@
           React
         </li>
         <li class="small-paragraph">
-          Node.js
-        </li>
-        <li class="small-paragraph">
           PHP
         </li>
         <li class="small-paragraph">
           Wordpress
+        </li>
+        <li class="small-paragraph">
+          Magento 1 & 2
         </li>
       </ul>
       <ul class="tech-list">
@@ -38,13 +38,47 @@
           Mobile
         </h3>
         <li class="small-paragraph">
-          Native Android apps with Java & Kotlin
+          Java (Native Android)
         </li>
         <li class="small-paragraph">
-          Native iOS apps with Swift
+          Kotlin (Native Android)
         </li>
         <li class="small-paragraph">
-          Hybrid apps with Ionic
+          Swift (Native iOS)
+        </li>
+        <li class="small-paragraph">
+          Ionic (Hybrid app)
+        </li>
+      </ul>
+      <ul class="tech-list">
+        <h3 class="small-title">
+          Design
+        </h3>
+        <li class="small-paragraph">
+          Adobe XD
+        </li>
+        <li class="small-paragraph">
+          Figma
+        </li>
+        <li class="small-paragraph">
+          Zeplin
+        </li>
+      </ul>
+      <ul class="tech-list">
+        <h3 class="small-title">
+          VCS & package management
+        </h3>
+        <li class="small-paragraph">
+          Git
+        </li>
+        <li class="small-paragraph">
+          SVN
+        </li>
+        <li class="small-paragraph">
+          Node Package Manager
+        </li>
+        <li class="small-paragraph">
+          Composer
         </li>
       </ul>
       <ul class="tech-list">
@@ -63,10 +97,36 @@
       </ul>
       <ul class="tech-list">
         <h3 class="small-title">
+          APIs & databases
+        </h3>
+        <li class="small-paragraph">
+          GraphQL
+        </li>
+        <li class="small-paragraph">
+          Node.js
+        </li>
+        <li class="small-paragraph">
+          Express.js
+        </li>
+        <li class="small-paragraph">
+          MySQL / MariaDB
+        </li>
+        <li class="small-paragraph">
+          MongoDB
+        </li>
+        <li class="small-paragraph">
+          PostgreSQL
+        </li>
+      </ul>
+      <ul class="tech-list">
+        <h3 class="small-title">
           Other
         </h3>
         <li class="small-paragraph">
-          Unity game engine with C#
+          Some games with Unity engine & C#
+        </li>
+        <li class="small-paragraph">
+          Some dabbling with machine learning
         </li>
       </ul>
     </div>

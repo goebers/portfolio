@@ -7,7 +7,7 @@
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 2em;
+  padding: 0 1.5em;
 }
 
 @media only screen and (min-width: $breakpoint-large-mobile) {
@@ -18,6 +18,6 @@
 
 @media only screen and (min-width: $breakpoint-small-desktop) {
   .container {
-    padding: 0 4em;
+    padding: 0 4.5em;
   }
 }
