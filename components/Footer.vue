@@ -14,9 +14,27 @@
         </p>
       </div>
       <div class="footer-center">
-        <p class="small-paragraph">
-          Socials
-        </p>
+        <div class="content">
+          <p class="small-paragraph">
+            Socials
+          </p>
+          <div class="social-icons">
+            <a
+              class="link"
+              href="https://www.linkedin.com/in/robert-laitila-09307610b/"
+              target="_blank"
+            >
+              <LinkedInIcon class="icon" />
+            </a>
+            <a
+              class="link"
+              href="https://github.com/goebers/"
+              target="_blank"
+            >
+              <GitHubIcon class="icon" />
+            </a>
+          </div>
+        </div>
       </div>
       <div class="footer-right">
         <p class="small-paragraph">
@@ -27,8 +45,12 @@
   </div>
 </template>
 <script>
+import LinkedInIcon from '~/assets/icon/linkedin.svg?inline'
+import GitHubIcon from '~/assets/icon/github.svg?inline'
+
 export default {
   name: 'Footer',
+  components: { LinkedInIcon, GitHubIcon },
   data () {
     return {
       currentYear: new Date().getFullYear()
@@ -46,12 +68,42 @@ export default {
 .footer-center,
 .footer-right {
   flex: 1 0 100%;
+  text-align: center;
+}
+
+.footer-center {
+  .content {
+    display: flex;
+    flex-direction: column;
+
+    .small-paragraph {
+      margin-bottom: 0.5rem;
+    }
+  }
+}
+
+.social-icons {
+  .link {
+    width: 100%;
+    height: 100%;
+
+    &:not(:last-child) {
+      margin-right: 0.5rem;
+    }
+  }
+
+  .icon {
+    height: 48px;
+    width: 48px;
+  }
 }
 
 @media only screen and (min-width: $breakpoint-large-mobile) {
   .footer-content {
     flex-direction: row;
     align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
 
   .footer-left,

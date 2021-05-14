@@ -72,7 +72,7 @@ export default {
   }
 }
 
-@media only screen and (min-width: $breakpoint-small-desktop) {
+@media only screen and (min-width: $breakpoint-large-mobile) {
   .desc-wrapper {
     .title {
       margin-bottom: 1.75rem;

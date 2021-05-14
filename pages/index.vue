@@ -23,19 +23,19 @@ export default {}
 .title {
   width: 100%;
   text-align: center;
-  margin-bottom: 1rem;
 }
 
+.title,
 .about-wrapper,
 .skills-wrapper {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 @media only screen and (min-width: $breakpoint-large-mobile) {
   .title,
   .about-wrapper,
   .skills-wrapper {
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
   }
 }
 </style>

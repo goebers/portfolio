@@ -230,9 +230,7 @@ export default {
   .small-paragraph {
     margin-bottom: 0.5rem;
   }
-}
 
-@media only screen and (min-width: $breakpoint-small-desktop) {
   .tech-list-wrapper {
     flex-direction: row;
     flex-wrap: wrap;
@@ -242,7 +240,9 @@ export default {
     flex: 0 0 50%;
     margin-bottom: 1.5rem;
   }
+}
 
+@media only screen and (min-width: $breakpoint-small-desktop) {
   .title {
     margin-bottom: 2rem;
   }
