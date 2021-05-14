@@ -4,11 +4,21 @@
       <div class="footer-left">
         <p class="small-paragraph">
           Site created with
-          <a class="link" href="https://nuxtjs.org/" target="_blank">
+          <a
+            class="link"
+            href="https://nuxtjs.org/"
+            target="_blank"
+            rel="noreferrer"
+          >
             Nuxt.js
           </a>
           and served using
-          <a class="link" href="https://pages.github.com/" target="_blank">
+          <a
+            class="link"
+            href="https://pages.github.com/"
+            target="_blank"
+            rel="noreferrer"
+          >
             GitHub pages.
           </a>
         </p>
@@ -23,6 +33,8 @@
               class="link"
               href="https://www.linkedin.com/in/robert-laitila-09307610b/"
               target="_blank"
+              rel="noreferrer"
+              aria-label="Link to my LinkedIn profile"
             >
               <LinkedInIcon class="icon" />
             </a>
@@ -30,6 +42,8 @@
               class="link"
               href="https://github.com/goebers/"
               target="_blank"
+              rel="noreferrer"
+              aria-label="Link to my GitHub profile"
             >
               <GitHubIcon class="icon" />
             </a>

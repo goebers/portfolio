@@ -7,22 +7,24 @@
       Below are listed some technologies, methods & platforms that I have used previously, and feel competent with, either in school or in professional manner at work.
     </p>
     <div class="skills-list-wrapper">
-      <ul
+      <div
         v-for="skill in skillsList"
         :key="skill.title"
         class="skills-list"
       >
-        <h3 class="small-title">
+        <h2 class="small-title">
           {{ skill.title }}
-        </h3>
-        <li
-          v-for="value in skill.values"
-          :key="value"
-          class="small-paragraph"
-        >
-          {{ value }}
-        </li>
-      </ul>
+        </h2>
+        <ul>
+          <li
+            v-for="value in skill.values"
+            :key="value"
+            class="small-paragraph"
+          >
+            {{ value }}
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </template>

@@ -1,7 +1,13 @@
 <template>
   <div class="about">
     <div class="picture-wrapper">
-      <img class="picture" src="@/static/img/me.jpg" alt="CV picture">
+      <img
+        class="picture"
+        src="@/static/img/me.jpg"
+        alt="CV picture"
+        width="500"
+        height="500"
+      >
     </div>
     <div class="desc-wrapper">
       <h1 class="title">
@@ -13,6 +19,7 @@
           class="link"
           href="https://lamia.fi/"
           target="_blank"
+          rel="noreferrer"
         >
           Lamia
         </a>
@@ -21,6 +28,7 @@
           class="link"
           href="https://www.metropolia.fi/fi"
           target="_blank"
+          rel="noreferrer"
         >
           Metropolia University of Applied Sciences.
         </a>
