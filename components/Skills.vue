@@ -6,164 +6,21 @@
     <p class="paragraph">
       Below are listed some technologies, methods & platforms that I have used previously, and feel competent with, either in school or in professional manner at work.
     </p>
-    <div class="tech-list-wrapper">
-      <ul class="tech-list">
+    <div class="skills-list-wrapper">
+      <ul
+        v-for="skill in skillsList"
+        :key="skill.title"
+        class="skills-list"
+      >
         <h3 class="small-title">
-          Web
+          {{ skill.title }}
         </h3>
-        <li class="small-paragraph">
-          HTML, CSS & JS
-        </li>
-        <li class="small-paragraph">
-          Vue.js
-        </li>
-        <li class="small-paragraph">
-          Angular 2
-        </li>
-        <li class="small-paragraph">
-          React
-        </li>
-        <li class="small-paragraph">
-          PHP
-        </li>
-        <li class="small-paragraph">
-          Wordpress
-        </li>
-        <li class="small-paragraph">
-          Magento 1 & 2
-        </li>
-      </ul>
-      <ul class="tech-list">
-        <h3 class="small-title">
-          Mobile
-        </h3>
-        <li class="small-paragraph">
-          Java (Native Android)
-        </li>
-        <li class="small-paragraph">
-          Kotlin (Native Android)
-        </li>
-        <li class="small-paragraph">
-          Swift (Native iOS)
-        </li>
-        <li class="small-paragraph">
-          Ionic (Hybrid app)
-        </li>
-      </ul>
-      <ul class="tech-list">
-        <h3 class="small-title">
-          Design
-        </h3>
-        <li class="small-paragraph">
-          Adobe XD
-        </li>
-        <li class="small-paragraph">
-          Figma
-        </li>
-        <li class="small-paragraph">
-          Zeplin
-        </li>
-      </ul>
-      <ul class="tech-list">
-        <h3 class="small-title">
-          Version control
-        </h3>
-        <li class="small-paragraph">
-          Git
-        </li>
-        <li class="small-paragraph">
-          SVN
-        </li>
-        <li class="small-paragraph">
-          GitHub
-        </li>
-        <li class="small-paragraph">
-          Bitbucket
-        </li>
-        <li class="small-paragraph">
-          GitLab
-        </li>
-      </ul>
-      <ul class="tech-list">
-        <h3 class="small-title">
-          Depedency & package management
-        </h3>
-        <li class="small-paragraph">
-          Node Package Manager
-        </li>
-        <li class="small-paragraph">
-          Composer
-        </li>
-        <li class="small-paragraph">
-          Yarn
-        </li>
-        <li class="small-paragraph">
-          Homebrew
-        </li>
-        <li class="small-paragraph">
-          APT
-        </li>
-      </ul>
-      <ul class="tech-list">
-        <h3 class="small-title">
-          Project management
-        </h3>
-        <li class="small-paragraph">
-          Scrum
-        </li>
-        <li class="small-paragraph">
-          Trello
-        </li>
-        <li class="small-paragraph">
-          Jira
-        </li>
-      </ul>
-      <ul class="tech-list">
-        <h3 class="small-title">
-          APIs & databases
-        </h3>
-        <li class="small-paragraph">
-          GraphQL
-        </li>
-        <li class="small-paragraph">
-          Node.js
-        </li>
-        <li class="small-paragraph">
-          Express.js
-        </li>
-        <li class="small-paragraph">
-          MySQL / MariaDB
-        </li>
-        <li class="small-paragraph">
-          MongoDB
-        </li>
-        <li class="small-paragraph">
-          PostgreSQL
-        </li>
-      </ul>
-      <ul class="tech-list">
-        <h3 class="small-title">
-          Operating systems
-        </h3>
-        <li class="small-paragraph">
-          Windows
-        </li>
-        <li class="small-paragraph">
-          Linux (Ubuntu & Manjaro)
-        </li>
-        <li class="small-paragraph">
-          MacOS
-        </li>
-      </ul>
-      <ul class="tech-list">
-        <h3 class="small-title">
-          Other
-        </h3>
-        <li class="small-paragraph">
-          Some games with Unity engine & C#
-        </li>
-        <li class="small-paragraph">
-          Some dabbling with machine learning
+        <li
+          v-for="value in skill.values"
+          :key="value"
+          class="small-paragraph"
+        >
+          {{ value }}
         </li>
       </ul>
     </div>
@@ -171,7 +28,96 @@
 </template>
 <script>
 export default {
-  name: 'Skills'
+  name: 'Skills',
+  data () {
+    return {
+      skillsList: [
+        {
+          title: 'Web',
+          values: [
+            'HTML, CSS & JS',
+            'Vue.js',
+            'Angular 2',
+            'React',
+            'PHP',
+            'Wordpress',
+            'Magento 1 & 2'
+          ]
+        },
+        {
+          title: 'Mobile',
+          values: [
+            'Java (Native Android)',
+            'Kotlin (Native Android)',
+            'Swift (Native iOS)',
+            'Ionic (Hybrid app)'
+          ]
+        },
+        {
+          title: 'Design',
+          values: [
+            'Adobe XD',
+            'Figma',
+            'Zeplin'
+          ]
+        },
+        {
+          title: 'Version control',
+          values: [
+            'Git',
+            'SVN',
+            'GitHub',
+            'Bitbucket',
+            'GitLab'
+          ]
+        },
+        {
+          title: 'Depedency & package management',
+          values: [
+            'NPM',
+            'Composer',
+            'Yarn',
+            'Homebrew',
+            'APT'
+          ]
+        },
+        {
+          title: 'Project management',
+          values: [
+            'Scrum',
+            'Trello',
+            'Jira'
+          ]
+        },
+        {
+          title: 'APIs & databases',
+          values: [
+            'GraphQL',
+            'Node.js',
+            'Express.js',
+            'MySQL / MariaDB',
+            'MongoDB',
+            'PostgreSQL'
+          ]
+        },
+        {
+          title: 'Operating systems',
+          values: [
+            'Windows',
+            'Linux (Ubuntu & Manjaro)',
+            'MacOS'
+          ]
+        },
+        {
+          title: 'Other',
+          values: [
+            'Some games with Unity engine & C#',
+            'Some dabbling with machine learning'
+          ]
+        }
+      ]
+    }
+  }
 }
 </script>
 <style scoped lang="scss">
@@ -181,13 +127,13 @@ export default {
   max-width: 100%;
 }
 
-.tech-list-wrapper {
+.skills-list-wrapper {
   display: flex;
   flex-direction: column;
   max-width: 100%;
 }
 
-.tech-list {
+.skills-list {
   flex: 0 0 100%;
   margin-bottom: 1rem;
 
@@ -231,12 +177,12 @@ export default {
     margin-bottom: 0.5rem;
   }
 
-  .tech-list-wrapper {
+  .skills-list-wrapper {
     flex-direction: row;
     flex-wrap: wrap;
   }
 
-  .tech-list {
+  .skills-list {
     flex: 0 0 50%;
     margin-bottom: 1.5rem;
   }
