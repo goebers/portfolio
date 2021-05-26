@@ -4,7 +4,7 @@
       Skills
     </h1>
     <p class="paragraph">
-      Below are listed some technologies, methods & platforms that I have used previously, and feel competent with, either in school or in professional manner at work.
+      Listed below are some technologies, methods and platforms that I have used previously, and feel competent working with. Stuff listed below I have either used in school, personal projects or in professional environment at work.
     </p>
     <div class="skills-list-wrapper">
       <div
@@ -185,8 +185,12 @@ export default {
   }
 
   .skills-list {
-    flex: 0 0 50%;
+    flex: 1 0 50%;
     margin-bottom: 1.5rem;
+
+    &:nth-child(odd) {
+      padding-right: 2em;
+    }
   }
 }
 

@@ -21,9 +21,11 @@
           target="_blank"
           rel="noreferrer"
         >
-          Lamia
+          Lamia.
         </a>
-        & finishing up my Bachelor's degree at
+      </p>
+      <p class="paragraph">
+        Recently finished up my Bachelor of Engineering degree in Information and Communications Technology at
         <a
           class="link"
           href="https://www.metropolia.fi/fi"
@@ -57,6 +59,7 @@ export default {
 }
 
 .picture-wrapper {
+  margin-bottom: 2rem;
   display: flex;
   justify-content: center;
 }
@@ -103,6 +106,7 @@ export default {
   }
 
   .picture-wrapper {
+    margin-bottom: 0;
     justify-content: flex-start;
     padding-right: 2em;
   }

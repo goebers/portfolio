@@ -21,6 +21,7 @@ export default {}
 }
 
 .title {
+  margin-top: 1.5rem;
   width: 100%;
   text-align: center;
 }
