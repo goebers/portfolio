@@ -5,6 +5,7 @@
     </h1>
     <About class="about-wrapper" />
     <Skills class="skills-wrapper" />
+    <Contact class="contact-wrapper" />
   </div>
 </template>
 
@@ -28,14 +29,16 @@ export default {}
 
 .title,
 .about-wrapper,
-.skills-wrapper {
+.skills-wrapper,
+.contact-wrapper {
   margin-bottom: 1.5rem;
 }
 
 @media only screen and (min-width: $breakpoint-large-mobile) {
   .title,
   .about-wrapper,
-  .skills-wrapper {
+  .skills-wrapper,
+  .contact-wrapper {
     margin-bottom: 2rem;
   }
 }

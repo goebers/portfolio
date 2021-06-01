@@ -67,6 +67,8 @@ export default {
 .picture {
   max-width: 100%;
   height: auto;
+  width: auto;
+  object-fit: cover;
 }
 
 .desc-wrapper {
@@ -108,7 +110,7 @@ export default {
   .picture-wrapper {
     margin-bottom: 0;
     justify-content: flex-start;
-    padding-right: 2em;
+    margin-right: 2em;
   }
 
   .desc-wrapper {
