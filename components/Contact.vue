@@ -11,9 +11,8 @@
         target="_blank"
         rel="noreferrer"
       >
-        LinkedIn
+        LinkedIn.
       </a>
-      or use the form below.
     </p>
   </div>
 </template>

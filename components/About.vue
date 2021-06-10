@@ -36,7 +36,19 @@
         </a>
       </p>
       <p class="paragraph">
-        I have several years of experience in different web dev jobs. Started my university studies in the the fall of 2016 have and ever since been perfecting my craft.
+        I have several years of experience in different web dev jobs. I have always been interested about computers and got involved in IT already in elementary school. Then in 2013 started my Vocational School in
+        <a
+          class="link"
+          href="https://www.keuda.fi/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Keuda.
+        </a>
+        Studied in information and communication technology with expertise in software production.
+      </p>
+      <p class="paragraph">
+        After vocational school I started my university studies in the the fall of 2016. Ever ever since then I have been perfecting my craft and learning more technologies.
       </p>
     </div>
   </div>
@@ -111,6 +123,13 @@ export default {
     margin-bottom: 0;
     justify-content: flex-start;
     margin-right: 2em;
+    // height: 100%;
+  }
+
+  .picture {
+    position: sticky;
+    align-self: flex-start;
+    top: 1.5rem;
   }
 
   .desc-wrapper {
