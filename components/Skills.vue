@@ -144,6 +144,10 @@ export default {
     list-style-type: disc;
     list-style-position: outside;
   }
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
 }
 
 .title {
@@ -151,7 +155,7 @@ export default {
 }
 
 .paragraph {
-  margin-bottom: 1.25rem;
+  margin-bottom: 0.75rem;
 }
 
 .small-title {
@@ -168,7 +172,7 @@ export default {
   }
 
   .paragraph {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
   }
 
   .small-title {
@@ -200,7 +204,7 @@ export default {
   }
 
   .paragraph {
-    margin-bottom: 1.75rem;
+    margin-bottom: 1.25rem;
   }
 
   .small-title {

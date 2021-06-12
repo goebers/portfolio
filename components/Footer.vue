@@ -91,6 +91,11 @@ export default {
 }
 
 .footer-left,
+.footer-center {
+  margin-bottom: 0.75rem;
+}
+
+.footer-left,
 .footer-center,
 .footer-right {
   flex: 1 0 100%;
@@ -132,6 +137,11 @@ export default {
   }
 
   .footer-left,
+  .footer-center {
+    margin-bottom: 0;
+  }
+
+  .footer-left,
   .footer-center,
   .footer-right {
     display: flex;
@@ -140,6 +150,7 @@ export default {
   }
 
   .footer-left {
+    text-align: left;
     justify-content: flex-start;
   }
 
