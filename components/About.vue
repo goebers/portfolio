@@ -105,6 +105,10 @@ export default {
 
     .paragraph {
       margin-bottom: 1rem;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
     }
   }
 }
@@ -123,7 +127,6 @@ export default {
     margin-bottom: 0;
     justify-content: flex-start;
     margin-right: 2em;
-    // height: 100%;
   }
 
   .picture {
