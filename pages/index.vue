@@ -4,7 +4,9 @@
       Robert Laitila
     </h1>
     <About class="about-wrapper" />
+    <Divider class="divider-wrapper" />
     <Skills class="skills-wrapper" />
+    <Divider class="divider-wrapper" />
     <Contact class="contact-wrapper" />
   </div>
 </template>
@@ -28,6 +30,7 @@ export default {}
 }
 
 .title,
+.divider-wrapper,
 .about-wrapper,
 .skills-wrapper,
 .contact-wrapper {
@@ -36,6 +39,7 @@ export default {}
 
 @media only screen and (min-width: $breakpoint-large-mobile) {
   .title,
+  .divider-wrapper,
   .about-wrapper,
   .skills-wrapper,
   .contact-wrapper {
