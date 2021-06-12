@@ -30,5 +30,8 @@ export default {
   ],
   modules: [
     '@nuxtjs/style-resources'
-  ]
+  ],
+  generate: {
+    fallback: true
+  }
 }

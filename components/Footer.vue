@@ -12,14 +12,14 @@
           >
             Nuxt.js
           </a>
-          and served using
+          and served statically using
           <a
             class="link"
-            href="https://pages.github.com/"
+            href="https://www.digitalocean.com/products/app-platform/"
             target="_blank"
             rel="noreferrer"
           >
-            GitHub pages.
+            DigitalOcean App Platform.
           </a>
         </p>
       </div>
@@ -47,6 +47,15 @@
             >
               <GitHubIcon class="icon" />
             </a>
+            <a
+              class="link"
+              href="https://dribbble.com/goebers"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Link to my Dribbble profile"
+            >
+              <DribbbleIcon class="icon" />
+            </a>
           </div>
         </div>
       </div>
@@ -61,10 +70,11 @@
 <script>
 import LinkedInIcon from '~/assets/icon/linkedin.svg?inline'
 import GitHubIcon from '~/assets/icon/github.svg?inline'
+import DribbbleIcon from '~/assets/icon/dribbble.svg?inline'
 
 export default {
   name: 'Footer',
-  components: { LinkedInIcon, GitHubIcon },
+  components: { LinkedInIcon, GitHubIcon, DribbbleIcon },
   data () {
     return {
       currentYear: new Date().getFullYear()
@@ -76,6 +86,8 @@ export default {
 .footer-content {
   display: flex;
   flex-direction: column;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .footer-left,
@@ -83,6 +95,7 @@ export default {
 .footer-right {
   flex: 1 0 100%;
   text-align: center;
+  word-wrap: break-word;
 }
 
 .footer-center {
@@ -116,8 +129,6 @@ export default {
   .footer-content {
     flex-direction: row;
     align-items: center;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
   }
 
   .footer-left,
