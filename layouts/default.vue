@@ -16,6 +16,9 @@ body {
 
 .default-layout {
   background-color: $background-color;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .footer-wrapper {

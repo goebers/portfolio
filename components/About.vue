@@ -14,7 +14,7 @@
         About me
       </h1>
       <p class="paragraph">
-        Currently working as a front-end web developer @
+        Hi I'm Robert. I am {{ getAge }} year old software developer from Kerava, Finland. I currently work as a frontend web developer at
         <a
           class="link"
           href="https://lamia.fi/"
@@ -25,37 +25,55 @@
         </a>
       </p>
       <p class="paragraph">
-        Recently finished up my Bachelor of Engineering degree in Information and Communications Technology at
+        I finished my Bachelor of Engineering degree in Information and Communications Technology at
         <a
           class="link"
           href="https://www.metropolia.fi/fi"
           target="_blank"
           rel="noreferrer"
         >
-          Metropolia University of Applied Sciences.
+          Metropolia University of Applied Sciences
         </a>
+        in the spring of 2021.
       </p>
       <p class="paragraph">
-        I have several years of experience in different web dev jobs. I have always been interested about computers and got involved in IT already in elementary school. Then in 2013 started my Vocational School in
+        I have several years of experience in different web dev positions. My previous education is from
         <a
           class="link"
           href="https://www.keuda.fi/"
           target="_blank"
           rel="noreferrer"
         >
-          Keuda.
+          Keuda vocational school.
         </a>
-        Studied in information and communication technology with expertise in software production.
+        There I studied information and communication technology with primary focus in software production.
       </p>
       <p class="paragraph">
-        After vocational school I started my university studies in the the fall of 2016. Ever ever since then I have been perfecting my craft and learning more technologies.
+        In my spare time I like to stay active, spend time with my friends and family, and constantly try to learn new things. I believe that one of my greatest strenghts is that I get along with pretty much everyone. Also my past experiences in various customer service jobs makes me a good communicator with clients. If you want to check out my full work history it's visible on my
+        <a
+          class="link"
+          href="https://www.linkedin.com/in/robert-laitila-09307610b/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          LinkedIn profile.
+        </a>
       </p>
     </div>
   </div>
 </template>
 <script>
+import { differenceInYears } from 'date-fns'
+
 export default {
-  name: 'About'
+  name: 'About',
+  computed: {
+    getAge () {
+      const bDay = new Date('1997-02-04')
+
+      return differenceInYears(new Date(), bDay)
+    }
+  }
 }
 </script>
 <style scoped lang="scss">
@@ -124,9 +142,8 @@ export default {
   }
 
   .picture-wrapper {
-    margin-bottom: 0;
     justify-content: flex-start;
-    margin-right: 2em;
+    margin: 1em 2em 0 1em;
   }
 
   .picture {
