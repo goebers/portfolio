@@ -14,7 +14,7 @@
         About me
       </h1>
       <p class="paragraph">
-        Hi I'm Robert. I am {{ getAge }} year old software developer from Kerava, Finland. I currently work as a frontend web developer at
+        Hi I'm Robert, {{ getAge }} year old software developer from Kerava, Finland. I currently work as a frontend web developer at
         <a
           class="link"
           href="https://lamia.fi/"

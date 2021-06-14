@@ -20,15 +20,16 @@ export default {
     '~/assets/scss/main.scss'
   ],
   styleResources: {
-    scss: ['./assets/scss/*.scss']
+    scss: [
+      '~/assets/scss/variables/*.scss',
+      '~/assets/scss/color-themes.scss'
+    ]
   },
   components: true,
   buildModules: [
     '@nuxtjs/eslint-module',
     '@nuxtjs/stylelint-module',
-    '@nuxtjs/svg'
-  ],
-  modules: [
+    '@nuxtjs/svg',
     '@nuxtjs/style-resources'
   ],
   generate: {

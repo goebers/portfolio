@@ -38,10 +38,15 @@ h6 {
 
 .link {
   text-decoration: underline;
-  color: $link-color;
+
+  @include themed() {
+    color: t(link-color);
+  }
 
   &:hover {
-    color: $link-color-hover;
+    @include themed() {
+      color: t(link-color-hover);
+    }
   }
 }
 

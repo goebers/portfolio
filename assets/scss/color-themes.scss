@@ -1,0 +1,36 @@
+$themes: (
+  default: (
+    bg-color: $background-color--light,
+    footer-bg-color: $footer-background-color--light,
+    text-color: $text-color--light,
+    link-color: $link-color--light,
+    link-color-hover: $link-color-hover--light,
+  ),
+  dark: (
+    bg-color: $background-color--dark,
+    footer-bg-color: $footer-background-color--dark,
+    text-color: $text-color--dark,
+    link-color: $link-color--dark,
+    link-color-hover: $link-color-hover--dark,
+  ),
+);
+
+@mixin themed() {
+  @each $theme, $map in $themes {
+    .theme--#{$theme} & {
+      $theme-map: () !global;
+
+      @each $key, $submap in $map {
+        $value: map-get(map-get($themes, $theme), '#{$key}');
+        $theme-map: map-merge($theme-map, ($key: $value)) !global;
+      }
+
+      @content;
+      $theme-map: null !global;
+    }
+  }
+}
+
+@function t($key) {
+  @return map-get($theme-map, $key);
+}
