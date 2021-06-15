@@ -1,5 +1,6 @@
 <template>
   <div class="default-layout">
+    <ThemeToggleButton />
     <Nuxt />
     <Footer class="footer-wrapper" />
   </div>

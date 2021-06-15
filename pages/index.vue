@@ -10,15 +10,6 @@
     <Contact class="contact-wrapper" />
   </div>
 </template>
-
-<script>
-export default {
-  mounted () {
-    console.log(this.$colorMode.preference)
-  }
-}
-</script>
-
 <style scoped lang="scss">
 .index-page {
   width: 100%;
