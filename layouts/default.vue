@@ -1,10 +1,10 @@
 <template>
   <div class="default-layout">
+    <ThemeToggleButton />
     <Nuxt />
     <Footer class="footer-wrapper" />
   </div>
 </template>
-
 <style lang="scss">
 *,
 *::before,
@@ -15,10 +15,18 @@ body {
 }
 
 .default-layout {
-  background-color: $background-color;
+  @include themed() {
+    background-color: t('bg-color');
+  }
+
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .footer-wrapper {
-  background-color: $footer-background-color;
+  @include themed() {
+    background-color: t('footer-bg-color');
+  }
 }
 </style>

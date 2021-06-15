@@ -10,17 +10,11 @@
     <Contact class="contact-wrapper" />
   </div>
 </template>
-
-<script>
-export default {}
-</script>
-
 <style scoped lang="scss">
 .index-page {
   width: 100%;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
 }
 
 .title {
