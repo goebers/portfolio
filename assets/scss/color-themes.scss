@@ -1,5 +1,5 @@
 $themes: (
-  default: (
+  light: (
     bg-color: $background-color--light,
     footer-bg-color: $footer-background-color--light,
     text-color: $text-color--light,
@@ -17,7 +17,7 @@ $themes: (
 
 @mixin themed() {
   @each $theme, $map in $themes {
-    .theme--#{$theme} & {
+    .#{$theme}--theme & {
       $theme-map: () !global;
 
       @each $key, $submap in $map {

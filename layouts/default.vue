@@ -1,20 +1,9 @@
 <template>
-  <div :class="darkTheme ? 'theme--dark' : 'theme--default'">
-    <div class="default-layout">
-      <Nuxt />
-      <Footer class="footer-wrapper" />
-    </div>
+  <div class="default-layout">
+    <Nuxt />
+    <Footer class="footer-wrapper" />
   </div>
 </template>
-<script>
-export default {
-  data () {
-    return {
-      darkTheme: false
-    }
-  }
-}
-</script>
 <style lang="scss">
 *,
 *::before,

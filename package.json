@@ -12,6 +12,7 @@
     "lint": "npm run lint:js && npm run lint:style"
   },
   "dependencies": {
+    "@nuxtjs/color-mode": "^2.0.10",
     "core-js": "^3.9.1",
     "date-fns": "^2.22.1",
     "nuxt": "^2.15.3"

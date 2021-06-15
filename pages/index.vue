@@ -12,7 +12,11 @@
 </template>
 
 <script>
-export default {}
+export default {
+  mounted () {
+    console.log(this.$colorMode.preference)
+  }
+}
 </script>
 
 <style scoped lang="scss">

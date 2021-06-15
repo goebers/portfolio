@@ -30,9 +30,16 @@ export default {
     '@nuxtjs/eslint-module',
     '@nuxtjs/stylelint-module',
     '@nuxtjs/svg',
-    '@nuxtjs/style-resources'
+    '@nuxtjs/style-resources',
+    '@nuxtjs/color-mode'
   ],
   generate: {
     fallback: true
+  },
+  colorMode: {
+    preference: 'system',
+    fallback: 'light',
+    classSuffix: '--theme',
+    storageKey: 'theme-mode'
   }
 }
