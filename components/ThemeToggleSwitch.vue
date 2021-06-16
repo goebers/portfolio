@@ -1,13 +1,14 @@
 <template>
   <div class="theme-toggle__wrapper container">
-    <div class="theme-toggle__switch" @click="changeTheme">
+    <label class="theme-toggle__switch">
       <input
         id="theme-toggle-switch"
         type="checkbox"
         :checked="!isLightTheme"
+        @click="changeTheme"
       >
       <span class="theme-toggle__slider" />
-    </div>
+    </label>
     <label
       for="theme-toggle-switch"
       class="theme-toggle__label"
