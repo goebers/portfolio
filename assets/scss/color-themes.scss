@@ -6,6 +6,9 @@ $themes: (
     link-color: $link-color--light,
     link-color-hover: $link-color-hover--light,
     divider-bg-color: $divider-background-color--light,
+    selection-text-color: $text-color--dark,
+    selection-link-color: $link-color--dark,
+    selection-bg-color: $text-color--dark,
   ),
   dark: (
     bg-color: $background-color--dark,
@@ -14,6 +17,9 @@ $themes: (
     link-color: $link-color--dark,
     link-color-hover: $link-color-hover--dark,
     divider-bg-color: $divider-background-color--dark,
+    selection-text-color: $text-color--light,
+    selection-link-color: $link-color--light,
+    selection-bg-color: $text-color--dark,
   ),
 );
 

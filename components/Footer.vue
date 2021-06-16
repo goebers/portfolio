@@ -127,11 +127,16 @@ export default {
   .icon {
     height: 48px;
     width: 48px;
+    transition: 300ms;
 
     path {
       @include themed() {
         fill: t('text-color');
       }
+    }
+
+    &:hover {
+      transform: scale(0.85);
     }
   }
 }

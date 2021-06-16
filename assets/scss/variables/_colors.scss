@@ -5,11 +5,13 @@ $text-color--light: #000;
 $link-color--light: #015670;
 $link-color-hover--light: #00292e;
 $divider-background-color--light: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.25));
+$selection-background-color--light: #000;
 
 // Dark theme colors
 $background-color--dark: #1d2d50;
 $footer-background-color--dark: #1e5f74;
 $text-color--dark: #ddd;
 $link-color--dark: #f05454;
-$link-color-hover--dark: #e2ab74;
+$link-color-hover--dark: #d43c3c;
 $divider-background-color--dark: linear-gradient(to right, rgb(221, 221, 221), rgba(255, 255, 255, 0.25));
+$selection-background-color--dark: #ddd;
