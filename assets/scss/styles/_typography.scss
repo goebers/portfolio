@@ -1,3 +1,24 @@
+::selection {
+  @include themed() {
+    color: t('selection-text-color');
+    background: t('selection-bg-color');
+  }
+}
+
+::-moz-selection {
+  @include themed() {
+    color: t('selection-text-color');
+    background: t('selection-bg-color');
+  }
+}
+
+::-webkit-selection {
+  @include themed() {
+    color: t('selection-text-color');
+    background: t('selection-bg-color');
+  }
+}
+
 html {
   font-family: $font-family;
   font-size: $font-default-size;
@@ -8,6 +29,19 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li {
+  @include themed() {
+    color: t(text-color);
+  }
 }
 
 h1,
@@ -40,12 +74,33 @@ h6 {
   text-decoration: underline;
 
   @include themed() {
-    color: t(link-color);
+    color: t('link-color');
+  }
+
+  &::selection {
+    @include themed() {
+      color: t('selection-link-color');
+      background: t('selection-bg-color');
+    }
+  }
+
+  &::-moz-selection {
+    @include themed() {
+      color: t('selection-link-color');
+      background: t('selection-bg-color');
+    }
+  }
+
+  &::-webkit-selection {
+    @include themed() {
+      color: t('selection-link-color');
+      background: t('selection-bg-color');
+    }
   }
 
   &:hover {
     @include themed() {
-      color: t(link-color-hover);
+      color: t('link-color-hover');
     }
   }
 }

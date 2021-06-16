@@ -99,6 +99,12 @@ export default {
   height: auto;
   width: auto;
   object-fit: cover;
+  opacity: 0.85;
+  transition: 300ms;
+
+  &:hover {
+    opacity: 1;
+  }
 }
 
 .desc-wrapper {

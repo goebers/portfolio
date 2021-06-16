@@ -12,6 +12,9 @@ export default {
 .divider hr {
   border: 0;
   height: 1px;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.25));
+
+  @include themed() {
+    background-image: t('divider-bg-color');
+  }
 }
 </style>
