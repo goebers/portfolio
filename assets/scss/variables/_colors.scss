@@ -1,4 +1,4 @@
-// Light theme colors
+// Light theme colors (used in color-themes.scss)
 $background-color--light: #ffee;
 $footer-background-color--light: #eee;
 $text-color--light: #000;
@@ -7,16 +7,15 @@ $link-color-hover--light: #00292e;
 $divider-background-color--light: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.25));
 $selection-background-color--light: #000;
 
-// Dark theme colors
+// Dark theme colors (used in color-themes.scss)
 $background-color--dark: #1d2d50;
 $footer-background-color--dark: #1e5f74;
 $text-color--dark: #ddd;
-$link-color--dark: #f05454;
-$link-color-hover--dark: #d43c3c;
+$link-color--dark: #f5c2c2;
+$link-color-hover--dark: #cfa2a2;
 $divider-background-color--dark: linear-gradient(to right, rgb(221, 221, 221), rgba(255, 255, 255, 0.25));
 $selection-background-color--dark: #ddd;
 
 // Theme toggle button colors
-$toggle-color-base: #fff;
-$theme-bg-color-base: #bbc5e9;
-$theme-bg-color-checked: #0718f7;
+$theme-bg-color-base: #b3b394;
+$theme-bg-color-checked: #284d9c;

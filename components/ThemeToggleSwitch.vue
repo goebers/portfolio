@@ -1,12 +1,18 @@
 <template>
   <div class="theme-toggle__wrapper container">
-    <label class="theme-toggle__switch">
+    <div class="theme-toggle__switch" @click="changeTheme">
       <input
+        id="theme-toggle-switch"
         type="checkbox"
         :checked="!isLightTheme"
-        @click="changeTheme"
       >
       <span class="theme-toggle__slider" />
+    </div>
+    <label
+      for="theme-toggle-switch"
+      class="theme-toggle__label"
+    >
+      Switch between themes
     </label>
   </div>
 </template>
@@ -36,6 +42,18 @@ export default {
 .theme-toggle {
   &__wrapper {
     margin-top: 1.5rem;
+
+    &::selection {
+      background: transparent;
+    }
+
+    &::-moz-selection {
+      background: transparent;
+    }
+
+    &::-webkit-selection {
+      background: transparent;
+    }
   }
 
   &__slider {
@@ -52,12 +70,14 @@ export default {
 
     &::before {
       position: absolute;
-      content: "";
-      height: 25px;
-      width: 25px;
-      left: 5px;
-      bottom: 5px;
-      background-color: $toggle-color-base;
+      content: '';
+      background-image: url('~/assets/icon/theme_light.svg');
+      background-size: 33px 33px;
+      height: 33px;
+      width: 33px;
+      left: 7px;
+      bottom: 7px;
+      background-color: transparent;
       -webkit-transition: 300ms;
       transition: 300ms;
       border-radius: 50%;
@@ -75,8 +95,8 @@ export default {
   &__switch {
     position: relative;
     display: inline-block;
-    width: 60px;
-    height: 35px;
+    width: 80px;
+    height: 47px;
 
     input {
       opacity: 0;
@@ -84,9 +104,10 @@ export default {
       height: 0;
 
       &:checked + .theme-toggle__slider::before {
-        -webkit-transform: translateX(26px);
-        -ms-transform: translateX(26px);
-        transform: translateX(26px);
+        -webkit-transform: translateX(33px);
+        -ms-transform: translateX(33px);
+        transform: translateX(33px);
+        background-image: url('~/assets/icon/theme_dark.svg');
       }
 
       &:checked + .theme-toggle__slider {
@@ -96,13 +117,17 @@ export default {
       &:checked {
         &:hover {
           + .theme-toggle__slider::before {
-            -webkit-transform: translateX(22px);
-            -ms-transform: translateX(22px);
-            transform: translateX(22px);
+            -webkit-transform: translateX(29px);
+            -ms-transform: translateX(29px);
+            transform: translateX(29px);
           }
         }
       }
     }
+  }
+
+  &__label {
+    visibility: hidden;
   }
 }
 </style>
