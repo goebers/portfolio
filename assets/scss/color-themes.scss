@@ -5,6 +5,7 @@ $themes: (
     text-color: $text-color--light,
     link-color: $link-color--light,
     link-color-hover: $link-color-hover--light,
+    divider-bg-color: $divider-background-color--light,
   ),
   dark: (
     bg-color: $background-color--dark,
@@ -12,6 +13,7 @@ $themes: (
     text-color: $text-color--dark,
     link-color: $link-color--dark,
     link-color-hover: $link-color-hover--dark,
+    divider-bg-color: $divider-background-color--dark,
   ),
 );
 

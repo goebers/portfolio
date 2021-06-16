@@ -127,6 +127,12 @@ export default {
   .icon {
     height: 48px;
     width: 48px;
+
+    path {
+      @include themed() {
+        fill: t('text-color');
+      }
+    }
   }
 }
 
