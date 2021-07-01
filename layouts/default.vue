@@ -1,10 +1,36 @@
 <template>
-  <div class="default-layout">
+  <div
+    class="default-layout"
+    :class="getActiveClass"
+  >
     <ThemeToggleSwitch />
     <Nuxt />
     <Footer class="footer-wrapper" />
   </div>
 </template>
+<script>
+export default {
+  data () {
+    return {
+      isLoaded: false
+    }
+  },
+  computed: {
+    getActiveClass () {
+      if (this.isLoaded) {
+        return 'loaded'
+      } else {
+        return ''
+      }
+    }
+  },
+  mounted () {
+    setTimeout(() => {
+      this.isLoaded = true
+    }, 500)
+  }
+}
+</script>
 <style lang="scss">
 *,
 *::before,
@@ -15,6 +41,13 @@ body {
 }
 
 .default-layout {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+
+  &.loaded {
+    opacity: 1;
+  }
+
   @include themed() {
     background-color: t('bg-color');
   }
