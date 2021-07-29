@@ -1,7 +1,7 @@
 <template>
   <div class="contact">
     <h1 class="title">
-      Contact
+      Contact 📇
     </h1>
     <p class="paragraph">
       Want to get in touch with me? You can shoot me a message in

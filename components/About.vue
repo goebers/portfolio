@@ -11,7 +11,7 @@
     </div>
     <div class="desc-wrapper">
       <h1 class="title">
-        About me
+        About me 👋
       </h1>
       <p class="paragraph">
         Hi, I'm Robert, a {{ getAge }} year old software developer from Kerava, Finland, and I currently work as a frontend web developer at

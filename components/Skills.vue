@@ -1,10 +1,10 @@
 <template>
   <div class="skills">
     <h1 class="title">
-      Skills
+      Skills 📈
     </h1>
     <p class="paragraph">
-      Listed below are some technologies, methods and platforms that I have used previously, and feel competent working with. Stuff listed below I have either used in school, personal projects or in professional environment at work.
+      Listed below are some technologies, methods and platforms that I have used previously, and feel competent working with.
     </p>
     <div class="skills-list-wrapper">
       <div
@@ -19,9 +19,22 @@
           <li
             v-for="value in skill.values"
             :key="value"
-            class="small-paragraph"
+            class="list-item"
           >
-            {{ value }}
+            <div class="list-item__content">
+              <p class="small-paragraph">
+                {{ value.skill }}
+              </p>
+              <div class="rating">
+                <p
+                  v-for="n in parseInt(value.rating)"
+                  :key="n"
+                  class="small-paragraph"
+                >
+                  ⭐
+                </p>
+              </div>
+            </div>
           </li>
         </ul>
       </div>
@@ -33,88 +46,194 @@ export default {
   name: 'Skills',
   data () {
     return {
+      // Skill rating on a scale of 1-5
       skillsList: [
         {
           title: 'Web',
           values: [
-            'HTML, CSS & JS',
-            'Vue.js',
-            'Angular 2',
-            'React',
-            'PHP',
-            'Wordpress',
-            'Magento 1 & 2'
+            {
+              skill: 'HTML, CSS & JS',
+              rating: 5
+            },
+            {
+              skill: 'Vue.js',
+              rating: 5
+            },
+            {
+              skill: 'Angular 2',
+              rating: 4
+            },
+            {
+              skill: 'React',
+              rating: 4
+            },
+            {
+              skill: 'PHP',
+              rating: 3
+            },
+            {
+              skill: 'Wordpress',
+              rating: 3
+            },
+            {
+              skill: 'Magento 1 & 2',
+              rating: 3
+            }
           ]
         },
         {
           title: 'Mobile',
           values: [
-            'Java (Native Android)',
-            'Kotlin (Native Android)',
-            'Swift (Native iOS)',
-            'Ionic (Hybrid app)'
+            {
+              skill: 'Java (Native Android)',
+              rating: 2
+            },
+            {
+              skill: 'Kotlin (Native Android)',
+              rating: 3
+            },
+            {
+              skill: 'Swift (Native iOS)',
+              rating: 3
+            },
+            {
+              skill: 'Ionic (Hybrid)',
+              rating: 4
+            }
           ]
         },
         {
           title: 'Design',
           values: [
-            'Adobe XD',
-            'Figma',
-            'Zeplin'
+            {
+              skill: 'Adobe XD',
+              rating: 3
+            },
+            {
+              skill: 'Figma',
+              rating: 2
+            },
+            {
+              skill: 'Zeplin',
+              rating: 2
+            }
           ]
         },
         {
-          title: 'Version control',
+          title: 'VCS & VCS platforms',
           values: [
-            'Git',
-            'SVN',
-            'GitHub',
-            'Bitbucket',
-            'GitLab'
+            {
+              skill: 'Git',
+              rating: 5
+            },
+            {
+              skill: 'SVN',
+              rating: 2
+            },
+            {
+              skill: 'GitHub',
+              rating: 5
+            },
+            {
+              skill: 'Bitbucket',
+              rating: 5
+            },
+            {
+              skill: 'GitLab',
+              rating: 3
+            }
           ]
         },
         {
-          title: 'Depedency & package management',
+          title: 'Package management',
           values: [
-            'NPM',
-            'Composer',
-            'Yarn',
-            'Homebrew',
-            'APT'
+            {
+              skill: 'NPM',
+              rating: 5
+            },
+            {
+              skill: 'Composer',
+              rating: 3
+            },
+            {
+              skill: 'Yarn',
+              rating: 2
+            },
+            {
+              skill: 'Homebrew',
+              rating: 3
+            },
+            {
+              skill: 'APT',
+              rating: 3
+            }
           ]
         },
         {
           title: 'Project management',
           values: [
-            'Scrum',
-            'Trello',
-            'Jira'
+            {
+              skill: 'Scrum',
+              rating: 5
+            },
+            {
+              skill: 'Trello',
+              rating: 5
+            },
+            {
+              skill: 'Jira',
+              rating: 4
+            },
+            {
+              skill: 'Confluence',
+              rating: 3
+            }
           ]
         },
         {
           title: 'APIs & databases',
           values: [
-            'GraphQL',
-            'Node.js',
-            'Express.js',
-            'MySQL / MariaDB',
-            'MongoDB',
-            'PostgreSQL'
+            {
+              skill: 'GraphQL',
+              rating: 4
+            },
+            {
+              skill: 'Node.js',
+              rating: 5
+            },
+            {
+              skill: 'Express.js',
+              rating: 4
+            },
+            {
+              skill: 'MySQL / MariaDB',
+              rating: 4
+            },
+            {
+              skill: 'MongoDB',
+              rating: 3
+            },
+            {
+              skill: 'PostgreSQL',
+              rating: 2
+            }
           ]
         },
         {
           title: 'Operating systems',
           values: [
-            'Windows',
-            'Linux (Ubuntu & Manjaro)',
-            'MacOS'
-          ]
-        },
-        {
-          title: 'Other',
-          values: [
-            'Some games with Unity engine & C#',
-            'Some dabbling with machine learning'
+            {
+              skill: 'Windows',
+              rating: 5
+            },
+            {
+              skill: 'Linux',
+              rating: 4
+            },
+            {
+              skill: 'MacOS',
+              rating: 4
+            }
           ]
         }
       ]
@@ -139,10 +258,21 @@ export default {
   flex: 0 0 100%;
   margin-bottom: 1rem;
 
-  li {
+  .list-item {
     margin-left: 1em;
     list-style-type: disc;
     list-style-position: outside;
+
+    &__content {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .rating {
+      display: flex;
+      flex-direction: row;
+    }
   }
 
   &:last-of-type {
