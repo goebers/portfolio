@@ -11,10 +11,10 @@
     </div>
     <div class="desc-wrapper">
       <h1 class="title">
-        About me
+        About me 👋
       </h1>
       <p class="paragraph">
-        Hi I'm Robert, {{ getAge }} year old software developer from Kerava, Finland. I currently work as a frontend web developer at
+        Hi, I'm Robert, a {{ getAge }} year old software developer from Kerava, Finland, and I currently work as a frontend web developer at
         <a
           class="link"
           href="https://lamia.fi/"
@@ -37,19 +37,19 @@
         in the spring of 2021.
       </p>
       <p class="paragraph">
-        I have several years of experience in different web dev positions. My previous education is from
+        I have several years of experience in different web dev positions; my previous education is from
         <a
           class="link"
           href="https://www.keuda.fi/"
           target="_blank"
           rel="noreferrer"
         >
-          Keuda vocational school.
+          Keuda vocational school,
         </a>
-        There I studied information and communication technology with primary focus in software production.
+        where I studied information and communication technology with primary focus in software production.
       </p>
       <p class="paragraph">
-        In my spare time I like to stay active, spend time with my friends and family, and constantly try to learn new things. I believe that one of my greatest strenghts is that I get along with pretty much everyone. Also my past experiences in various customer service jobs makes me a good communicator with clients. If you want to check out my full work history it's visible on my
+        In my spare time, I like to stay active, spend time with my friends and family, and constantly try to learn new things. My past experiences in various customer service jobs make me an effective communicator with clients, and I believe that one of my greatest strenghts is that I get along with pretty much everyone. If you want to check out my full work history, it's available on my
         <a
           class="link"
           href="https://www.linkedin.com/in/robert-laitila-09307610b/"
