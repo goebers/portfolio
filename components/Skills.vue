@@ -4,7 +4,7 @@
       Skills 📈
     </h1>
     <p class="paragraph">
-      Listed below are some technologies, methods and platforms that I have used previously, and feel competent working with.
+      Listed below are some technologies, methods and platforms that I have used previously, and feel competent working with rated on a scale of 1-5.
     </p>
     <div class="skills-list-wrapper">
       <div
@@ -85,8 +85,8 @@ export default {
           title: 'Mobile',
           values: [
             {
-              skill: 'Java (Native Android)',
-              rating: 2
+              skill: 'Ionic (Hybrid)',
+              rating: 4
             },
             {
               skill: 'Kotlin (Native Android)',
@@ -97,8 +97,8 @@ export default {
               rating: 3
             },
             {
-              skill: 'Ionic (Hybrid)',
-              rating: 4
+              skill: 'Java (Native Android)',
+              rating: 2
             }
           ]
         },
@@ -127,10 +127,6 @@ export default {
               rating: 5
             },
             {
-              skill: 'SVN',
-              rating: 2
-            },
-            {
               skill: 'GitHub',
               rating: 5
             },
@@ -141,6 +137,10 @@ export default {
             {
               skill: 'GitLab',
               rating: 3
+            },
+            {
+              skill: 'SVN',
+              rating: 2
             }
           ]
         },
@@ -156,16 +156,16 @@ export default {
               rating: 3
             },
             {
-              skill: 'Yarn',
-              rating: 2
-            },
-            {
               skill: 'Homebrew',
               rating: 3
             },
             {
               skill: 'APT',
               rating: 3
+            },
+            {
+              skill: 'Yarn',
+              rating: 2
             }
           ]
         },
@@ -191,20 +191,25 @@ export default {
           ]
         },
         {
-          title: 'APIs & databases',
+          title: 'APIs',
           values: [
-            {
-              skill: 'GraphQL',
-              rating: 4
-            },
             {
               skill: 'Node.js',
               rating: 5
             },
             {
-              skill: 'Express.js',
+              skill: 'GraphQL',
               rating: 4
             },
+            {
+              skill: 'Express.js',
+              rating: 4
+            }
+          ]
+        },
+        {
+          title: 'Databases',
+          values: [
             {
               skill: 'MySQL / MariaDB',
               rating: 4
@@ -215,6 +220,48 @@ export default {
             },
             {
               skill: 'PostgreSQL',
+              rating: 2
+            }
+          ]
+        },
+        {
+          title: 'Testing',
+          values: [
+            {
+              skill: 'Postman',
+              rating: 5
+            },
+            {
+              skill: 'BrowserStack',
+              rating: 5
+            },
+            {
+              skill: 'Lighthouse',
+              rating: 4
+            }
+          ]
+        },
+        {
+          title: 'Code editors / IDEs',
+          values: [
+            {
+              skill: 'Visual Studio Code',
+              rating: 5
+            },
+            {
+              skill: 'PhpStorm',
+              rating: 5
+            },
+            {
+              skill: 'Xcode',
+              rating: 3
+            },
+            {
+              skill: 'Android Studio',
+              rating: 3
+            },
+            {
+              skill: 'Eclipse',
               rating: 2
             }
           ]
@@ -319,7 +366,7 @@ export default {
   }
 
   .skills-list {
-    flex: 1 0 50%;
+    flex: 0 1 50%;
     margin-bottom: 1.5rem;
 
     &:nth-child(odd) {
