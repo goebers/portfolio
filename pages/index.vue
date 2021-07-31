@@ -26,18 +26,24 @@
 .title,
 .divider-wrapper,
 .about-wrapper,
-.skills-wrapper,
-.contact-wrapper {
+.skills-wrapper {
   margin-bottom: 1.5rem;
+}
+
+.contact-wrapper {
+  margin-bottom: 3rem;
 }
 
 @media only screen and (min-width: $breakpoint-large-mobile) {
   .title,
   .divider-wrapper,
   .about-wrapper,
-  .skills-wrapper,
-  .contact-wrapper {
+  .skills-wrapper {
     margin-bottom: 2rem;
+  }
+
+  .contact-wrapper {
+    margin-bottom: 4rem;
   }
 }
 </style>
