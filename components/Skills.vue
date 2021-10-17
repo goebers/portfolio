@@ -60,12 +60,12 @@ export default {
               rating: 5
             },
             {
-              skill: 'Angular 2',
+              skill: 'React',
               rating: 4
             },
             {
-              skill: 'React',
-              rating: 4
+              skill: 'Angular 2',
+              rating: 3
             },
             {
               skill: 'PHP',
@@ -191,7 +191,7 @@ export default {
           ]
         },
         {
-          title: 'APIs',
+          title: 'JS frameworks / APIs',
           values: [
             {
               skill: 'Node.js',
@@ -204,6 +204,14 @@ export default {
             {
               skill: 'Express.js',
               rating: 4
+            },
+            {
+              skill: 'NestJS',
+              rating: 3
+            },
+            {
+              skill: 'Prisma',
+              rating: 3
             }
           ]
         },
@@ -220,7 +228,7 @@ export default {
             },
             {
               skill: 'PostgreSQL',
-              rating: 2
+              rating: 3
             }
           ]
         },
