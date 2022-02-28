@@ -20,9 +20,7 @@
           href="https://lamia.fi/"
           target="_blank"
           rel="noreferrer"
-        >
-          Lamia.
-        </a>
+        >Lamia</a>.
       </p>
       <p class="paragraph">
         I finished my Bachelor of Engineering degree in Information and Communications Technology at
@@ -31,10 +29,7 @@
           href="https://www.metropolia.fi/fi"
           target="_blank"
           rel="noreferrer"
-        >
-          Metropolia University of Applied Sciences
-        </a>
-        in the spring of 2021.
+        >Metropolia University of Applied Sciences</a> in the spring of 2021.
       </p>
       <p class="paragraph">
         I have several years of experience in different web dev positions; my previous education is from
@@ -43,21 +38,16 @@
           href="https://www.keuda.fi/"
           target="_blank"
           rel="noreferrer"
-        >
-          Keuda vocational school,
-        </a>
-        where I studied information and communication technology with primary focus in software production.
+        >Keuda vocational school</a>, where I studied information and communication technology with primary focus in software production.
       </p>
       <p class="paragraph">
-        In my spare time, I like to stay active, spend time with my friends and family, and constantly try to learn new things. My past experiences in various customer service jobs make me an effective communicator with clients, and I believe that one of my greatest strenghts is that I get along with pretty much everyone. If you want to check out my full work history, it's available on my
+        In my spare time, I like to stay active, spend time with my friends and family, and constantly try to learn new things. My past experiences in various customer service jobs make me an effective communicator with clients, and I believe that one of my greatest strengths is that I get along with pretty much everyone. If you want to check out my full work history, it's available on my
         <a
           class="link"
           href="https://www.linkedin.com/in/robert-laitila-09307610b/"
           target="_blank"
           rel="noreferrer"
-        >
-          LinkedIn profile.
-        </a>
+        >LinkedIn profile</a>.
       </p>
     </div>
   </div>

@@ -68,15 +68,7 @@ export default {
               rating: 3
             },
             {
-              skill: 'PHP',
-              rating: 3
-            },
-            {
-              skill: 'Wordpress',
-              rating: 3
-            },
-            {
-              skill: 'Magento 1 & 2',
+              skill: 'WordPress',
               rating: 3
             }
           ]
@@ -136,7 +128,7 @@ export default {
             },
             {
               skill: 'GitLab',
-              rating: 3
+              rating: 4
             },
             {
               skill: 'SVN',
@@ -152,11 +144,7 @@ export default {
               rating: 5
             },
             {
-              skill: 'Composer',
-              rating: 3
-            },
-            {
-              skill: 'Homebrew',
+              skill: 'Yarn',
               rating: 3
             },
             {
@@ -164,7 +152,11 @@ export default {
               rating: 3
             },
             {
-              skill: 'Yarn',
+              skill: 'Composer',
+              rating: 2
+            },
+            {
+              skill: 'Homebrew',
               rating: 2
             }
           ]
@@ -195,10 +187,10 @@ export default {
           values: [
             {
               skill: 'Node.js',
-              rating: 5
+              rating: 4
             },
             {
-              skill: 'GraphQL',
+              skill: 'REST',
               rating: 4
             },
             {
@@ -206,12 +198,16 @@ export default {
               rating: 4
             },
             {
-              skill: 'NestJS',
+              skill: 'GraphQL',
               rating: 3
             },
             {
               skill: 'Prisma',
               rating: 3
+            },
+            {
+              skill: 'NestJS',
+              rating: 2
             }
           ]
         },
@@ -233,6 +229,19 @@ export default {
           ]
         },
         {
+          title: 'Virtualization',
+          values: [
+            {
+              skill: 'Docker',
+              rating: 3
+            },
+            {
+              skill: 'Proxmox',
+              rating: 1
+            }
+          ]
+        },
+        {
           title: 'Testing',
           values: [
             {
@@ -246,6 +255,10 @@ export default {
             {
               skill: 'Lighthouse',
               rating: 4
+            },
+            {
+              skill: 'Jest',
+              rating: 3
             }
           ]
         },

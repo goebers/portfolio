@@ -9,18 +9,13 @@
             href="https://nuxtjs.org/"
             target="_blank"
             rel="noreferrer"
-          >
-            Nuxt.js
-          </a>
-          and served statically using
+          >Nuxt.js</a> and served statically using
           <a
             class="link"
             href="https://www.digitalocean.com/products/app-platform/"
             target="_blank"
             rel="noreferrer"
-          >
-            DigitalOcean App Platform.
-          </a>
+          >DigitalOcean App Platform</a>.
         </p>
       </div>
       <div class="footer-center">
