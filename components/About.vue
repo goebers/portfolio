@@ -14,13 +14,13 @@
         About me 👋
       </h1>
       <p class="paragraph">
-        Hi, I'm Robert, a {{ getAge }} year old software developer from Kerava, Finland, and I currently work as a frontend web developer at
+        Hi, I'm Robert, a {{ getAge }} year old software developer from Kerava, Finland, and I currently work at
         <a
           class="link"
-          href="https://lamia.fi/"
+          href="https://www.giosg.com/"
           target="_blank"
           rel="noreferrer"
-        >Lamia</a>.
+        >giosg</a>.
       </p>
       <p class="paragraph">
         I finished my Bachelor of Engineering degree in Information and Communications Technology at
