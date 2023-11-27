@@ -52,16 +52,20 @@ export default {
           title: 'Web',
           values: [
             {
-              skill: 'HTML, CSS & JS',
+              skill: 'HTML, CSS & JS / TS',
               rating: 5
             },
             {
-              skill: 'Vue.js',
+              skill: 'Vue.js / Nuxt.js',
               rating: 5
             },
             {
               skill: 'React',
-              rating: 4
+              rating: 5
+            },
+            {
+              skill: 'Django',
+              rating: 3
             },
             {
               skill: 'Angular 2',
@@ -70,6 +74,10 @@ export default {
             {
               skill: 'WordPress',
               rating: 3
+            },
+            {
+              skill: 'Magento 2',
+              rating: 2
             }
           ]
         },
@@ -103,7 +111,7 @@ export default {
             },
             {
               skill: 'Figma',
-              rating: 2
+              rating: 3
             },
             {
               skill: 'Zeplin',
@@ -152,11 +160,11 @@ export default {
               rating: 3
             },
             {
-              skill: 'Composer',
-              rating: 2
+              skill: 'Homebrew',
+              rating: 3
             },
             {
-              skill: 'Homebrew',
+              skill: 'Composer',
               rating: 2
             }
           ]
@@ -169,11 +177,11 @@ export default {
               rating: 5
             },
             {
-              skill: 'Trello',
+              skill: 'Jira',
               rating: 5
             },
             {
-              skill: 'Jira',
+              skill: 'Trello',
               rating: 4
             },
             {
@@ -219,25 +227,12 @@ export default {
               rating: 4
             },
             {
+              skill: 'PostgreSQL',
+              rating: 4
+            },
+            {
               skill: 'MongoDB',
               rating: 3
-            },
-            {
-              skill: 'PostgreSQL',
-              rating: 3
-            }
-          ]
-        },
-        {
-          title: 'Virtualization',
-          values: [
-            {
-              skill: 'Docker',
-              rating: 3
-            },
-            {
-              skill: 'Proxmox',
-              rating: 1
             }
           ]
         },
@@ -253,12 +248,49 @@ export default {
               rating: 5
             },
             {
+              skill: 'Cypress',
+              rating: 4
+            },
+            {
               skill: 'Lighthouse',
               rating: 4
             },
             {
               skill: 'Jest',
               rating: 3
+            }
+          ]
+        },
+        {
+          title: 'Miscellaneous',
+          values: [
+            {
+              skill: 'Docker',
+              rating: 4
+            },
+            {
+              skill: 'Superset',
+              rating: 3
+            },
+            {
+              skill: 'Drone',
+              rating: 3
+            },
+            {
+              skill: 'Jenkins',
+              rating: 2
+            },
+            {
+              skill: 'Kubernetes',
+              rating: 1
+            },
+            {
+              skill: 'Zeplin',
+              rating: 1
+            },
+            {
+              skill: 'Proxmox',
+              rating: 1
             }
           ]
         },
