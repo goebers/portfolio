@@ -74,6 +74,10 @@ export default {
             {
               skill: 'WordPress',
               rating: 3
+            },
+            {
+              skill: 'Magento 2',
+              rating: 2
             }
           ]
         },
@@ -267,6 +271,18 @@ export default {
             {
               skill: 'Superset',
               rating: 3
+            },
+            {
+              skill: 'Drone',
+              rating: 3
+            },
+            {
+              skill: 'Jenkins',
+              rating: 2
+            },
+            {
+              skill: 'Kubernetes',
+              rating: 1
             },
             {
               skill: 'Zeplin',
