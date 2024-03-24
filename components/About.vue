@@ -14,13 +14,13 @@
         About me 👋
       </h1>
       <p class="paragraph">
-        Hi, I'm Robert, a {{ getAge }} year old software developer from Kerava, Finland, and I currently work at
+        Hi, I'm Robert, a {{ getAge }} year old full stack web developer from Vantaa, Finland. I currently work at
         <a
           class="link"
           href="https://www.giosg.com/"
           target="_blank"
           rel="noreferrer"
-        >giosg</a>.
+        >giosg</a> and have been working in the industry since 2016.
       </p>
       <p class="paragraph">
         I finished my Bachelor of Engineering degree in Information and Communications Technology at
@@ -32,7 +32,7 @@
         >Metropolia University of Applied Sciences</a> in the spring of 2021.
       </p>
       <p class="paragraph">
-        I have several years of experience in different web dev positions; my previous education is from
+        My previous education is from
         <a
           class="link"
           href="https://www.keuda.fi/"
@@ -41,7 +41,10 @@
         >Keuda vocational school</a>, where I studied information and communication technology with primary focus in software production.
       </p>
       <p class="paragraph">
-        In my spare time, I like to stay active, spend time with my friends and family, and constantly try to learn new things. My past experiences in various customer service jobs make me an effective communicator with clients, and I believe that one of my greatest strengths is that I get along with pretty much everyone. If you want to check out my full work history, it's available on my
+        In my spare time, I like to stay active, spend time with my friends and family, and constantly try to learn new things. Currently I'm passionate about running, golf & renovating my apartment. I'm also part of a theater group where we do short plays.
+      </p>
+      <p class="paragraph">
+        There are three things I value at work above all: supportive atmosphere, smooth team work and room to grow. Currently I am well-versed in all areas of web development and am starting to look into other things that I can learn to further support my knowledge. If you want to check out my full work history, it's available on my
         <a
           class="link"
           href="https://www.linkedin.com/in/robert-laitila-09307610b/"

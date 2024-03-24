@@ -4,7 +4,7 @@
       Skills 📈
     </h1>
     <p class="paragraph">
-      Listed below are some technologies, methods and platforms that I have used previously, and feel competent working with rated on a scale of 1-5.
+      Listed below are some (not all) technologies, methods and platforms that I have used previously, and feel competent working with.
     </p>
     <div class="skills-list-wrapper">
       <div
@@ -23,17 +23,8 @@
           >
             <div class="list-item__content">
               <p class="small-paragraph">
-                {{ value.skill }}
+                {{ value }}
               </p>
-              <div class="rating">
-                <p
-                  v-for="n in parseInt(value.rating)"
-                  :key="n"
-                  class="small-paragraph"
-                >
-                  ⭐
-                </p>
-              </div>
             </div>
           </li>
         </ul>
@@ -46,294 +37,109 @@ export default {
   name: 'Skills',
   data () {
     return {
-      // Skill rating on a scale of 1-5
       skillsList: [
         {
           title: 'Web',
           values: [
-            {
-              skill: 'HTML, CSS & JS / TS',
-              rating: 5
-            },
-            {
-              skill: 'Vue.js / Nuxt.js',
-              rating: 5
-            },
-            {
-              skill: 'React',
-              rating: 5
-            },
-            {
-              skill: 'Django',
-              rating: 3
-            },
-            {
-              skill: 'Angular 2',
-              rating: 3
-            },
-            {
-              skill: 'WordPress',
-              rating: 3
-            },
-            {
-              skill: 'Magento 2',
-              rating: 2
-            }
+            'TypeScript',
+            'React / Vue / Angular',
+            'WordPress',
+            'Magento 2'
+          ]
+        },
+        {
+          title: 'Backends / APIs',
+          values: [
+            'Django',
+            'Node.js',
+            'REST',
+            'Express.js',
+            'GraphQL',
+            'Prisma',
+            'NestJS'
           ]
         },
         {
           title: 'Mobile',
           values: [
-            {
-              skill: 'Ionic (Hybrid)',
-              rating: 4
-            },
-            {
-              skill: 'Kotlin (Native Android)',
-              rating: 3
-            },
-            {
-              skill: 'Swift (Native iOS)',
-              rating: 3
-            },
-            {
-              skill: 'Java (Native Android)',
-              rating: 2
-            }
-          ]
-        },
-        {
-          title: 'Design',
-          values: [
-            {
-              skill: 'Adobe XD',
-              rating: 3
-            },
-            {
-              skill: 'Figma',
-              rating: 3
-            },
-            {
-              skill: 'Zeplin',
-              rating: 2
-            }
-          ]
-        },
-        {
-          title: 'VCS & VCS platforms',
-          values: [
-            {
-              skill: 'Git',
-              rating: 5
-            },
-            {
-              skill: 'GitHub',
-              rating: 5
-            },
-            {
-              skill: 'Bitbucket',
-              rating: 5
-            },
-            {
-              skill: 'GitLab',
-              rating: 4
-            },
-            {
-              skill: 'SVN',
-              rating: 2
-            }
-          ]
-        },
-        {
-          title: 'Package management',
-          values: [
-            {
-              skill: 'NPM',
-              rating: 5
-            },
-            {
-              skill: 'Yarn',
-              rating: 3
-            },
-            {
-              skill: 'APT',
-              rating: 3
-            },
-            {
-              skill: 'Homebrew',
-              rating: 3
-            },
-            {
-              skill: 'Composer',
-              rating: 2
-            }
-          ]
-        },
-        {
-          title: 'Project management',
-          values: [
-            {
-              skill: 'Scrum',
-              rating: 5
-            },
-            {
-              skill: 'Jira',
-              rating: 5
-            },
-            {
-              skill: 'Trello',
-              rating: 4
-            },
-            {
-              skill: 'Confluence',
-              rating: 3
-            }
-          ]
-        },
-        {
-          title: 'JS frameworks / APIs',
-          values: [
-            {
-              skill: 'Node.js',
-              rating: 4
-            },
-            {
-              skill: 'REST',
-              rating: 4
-            },
-            {
-              skill: 'Express.js',
-              rating: 4
-            },
-            {
-              skill: 'GraphQL',
-              rating: 3
-            },
-            {
-              skill: 'Prisma',
-              rating: 3
-            },
-            {
-              skill: 'NestJS',
-              rating: 2
-            }
+            'Ionic (Hybrid)',
+            'Kotlin (Native Android)',
+            'Swift (Native iOS)',
+            'Java (Native Android)'
           ]
         },
         {
           title: 'Databases',
           values: [
-            {
-              skill: 'MySQL / MariaDB',
-              rating: 4
-            },
-            {
-              skill: 'PostgreSQL',
-              rating: 4
-            },
-            {
-              skill: 'MongoDB',
-              rating: 3
-            }
+            'MySQL / MariaDB',
+            'PostgreSQL',
+            'ClickHouse',
+            'MongoDB'
           ]
         },
         {
           title: 'Testing',
           values: [
-            {
-              skill: 'Postman',
-              rating: 5
-            },
-            {
-              skill: 'BrowserStack',
-              rating: 5
-            },
-            {
-              skill: 'Cypress',
-              rating: 4
-            },
-            {
-              skill: 'Lighthouse',
-              rating: 4
-            },
-            {
-              skill: 'Jest',
-              rating: 3
-            }
+            'Postman',
+            'BrowserStack',
+            'Cypress',
+            'Lighthouse',
+            'Jest'
+          ]
+        },
+        {
+          title: 'Infra',
+          values: [
+            'Docker',
+            'Drone',
+            'Jenkins',
+            'Kubernetes',
+            'Proxmox'
+          ]
+        },
+        {
+          title: 'Design',
+          values: [
+            'Figma',
+            'Zeplin',
+            'Sketch',
+            'Adobe XD'
+          ]
+        },
+        {
+          title: 'VCS & VCS platforms',
+          values: [
+            'Git',
+            'GitHub',
+            'Bitbucket',
+            'GitLab',
+            'Subversion'
+          ]
+        },
+        {
+          title: 'Package management',
+          values: [
+            'NPM',
+            'Yarn',
+            'Homebrew',
+            'Composer'
           ]
         },
         {
           title: 'Miscellaneous',
           values: [
-            {
-              skill: 'Docker',
-              rating: 4
-            },
-            {
-              skill: 'Superset',
-              rating: 3
-            },
-            {
-              skill: 'Drone',
-              rating: 3
-            },
-            {
-              skill: 'Jenkins',
-              rating: 2
-            },
-            {
-              skill: 'Kubernetes',
-              rating: 1
-            },
-            {
-              skill: 'Zeplin',
-              rating: 1
-            },
-            {
-              skill: 'Proxmox',
-              rating: 1
-            }
-          ]
-        },
-        {
-          title: 'Code editors / IDEs',
-          values: [
-            {
-              skill: 'Visual Studio Code',
-              rating: 5
-            },
-            {
-              skill: 'PhpStorm',
-              rating: 5
-            },
-            {
-              skill: 'Xcode',
-              rating: 3
-            },
-            {
-              skill: 'Android Studio',
-              rating: 3
-            },
-            {
-              skill: 'Eclipse',
-              rating: 2
-            }
+            'Superset',
+            'Zeppelin',
+            'Apache Airflow',
+            'Bash scripting'
           ]
         },
         {
           title: 'Operating systems',
           values: [
-            {
-              skill: 'Windows',
-              rating: 5
-            },
-            {
-              skill: 'Linux',
-              rating: 4
-            },
-            {
-              skill: 'MacOS',
-              rating: 4
-            }
+            'Windows',
+            'Linux',
+            'MacOS'
           ]
         }
       ]
@@ -367,11 +173,6 @@ export default {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-    }
-
-    .rating {
-      display: flex;
-      flex-direction: row;
     }
   }
 
@@ -443,6 +244,10 @@ export default {
 
   .small-paragraph {
     margin-bottom: 0.75rem;
+  }
+
+  .skills-list {
+    flex: 0 1 33%;
   }
 }
 </style>
