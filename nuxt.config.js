@@ -1,4 +1,4 @@
-export default {
+export default defineNuxtConfig({
   ssr: false,
   target: 'static',
   head: {
@@ -26,7 +26,7 @@ export default {
     ]
   },
   components: true,
-  buildModules: [
+  modules: [
     '@nuxtjs/eslint-module',
     '@nuxtjs/stylelint-module',
     '@nuxtjs/svg',
@@ -42,4 +42,4 @@ export default {
     classSuffix: '--theme',
     storageKey: 'theme-mode'
   }
-}
+})

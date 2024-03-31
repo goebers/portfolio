@@ -12,28 +12,32 @@
     "lint": "npm run lint:js && npm run lint:style"
   },
   "dependencies": {
-    "@nuxtjs/color-mode": "^2.0.10",
+    "@nuxtjs/color-mode": "^3.3.0",
     "core-js": "^3.9.1",
-    "date-fns": "^2.22.1",
-    "nuxt": "^2.15.3"
+    "date-fns": "^3.6.0"
   },
   "devDependencies": {
-    "@nuxtjs/eslint-config": "^6.0.0",
-    "@nuxtjs/eslint-module": "^3.0.2",
+    "@nuxtjs/eslint-config": "^12.0.0",
+    "@nuxtjs/eslint-module": "^4.1.0",
     "@nuxtjs/style-resources": "^1.1.0",
-    "@nuxtjs/stylelint-module": "^4.0.0",
-    "@nuxtjs/svg": "^0.1.12",
+    "@nuxtjs/stylelint-module": "^5.0.0",
+    "@nuxtjs/svg": "^0.4.1",
     "babel-eslint": "^10.1.0",
     "eslint": "^7.22.0",
     "eslint-plugin-nuxt": "^2.0.0",
     "eslint-plugin-vue": "^7.7.0",
-    "fibers": "^5.0.0",
+    "nuxt": "^3.11.1",
     "sass": "^1.32.12",
     "sass-loader": "^10.1.1",
     "stylelint": "^13.12.0",
     "stylelint-config-standard": "^21.0.0"
   },
   "engines": {
-    "node": "14.17.3"
+    "node": "20.12.0"
+  },
+  "prettier": {
+    "tabWidth": 2,
+    "singleQuote": false,
+    "trailingComma": "es5"
   }
 }
