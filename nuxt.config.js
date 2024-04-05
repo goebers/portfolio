@@ -42,6 +42,9 @@ export default defineNuxtConfig({
   },
   components: true,
   modules: ['nuxt-svgo', '@nuxtjs/color-mode'],
+  svgo: {
+    defaultImport: 'component',
+  },
   generate: {
     fallback: true,
   },
