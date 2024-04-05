@@ -19,7 +19,6 @@
   "devDependencies": {
     "@nuxtjs/eslint-module": "^4.1.0",
     "@nuxtjs/stylelint-module": "^5.0.0",
-    "@nuxtjs/svg": "^0.4.1",
     "babel-eslint": "^10.1.0",
     "eslint-plugin-nuxt": "^2.0.0",
     "eslint-plugin-vue": "^7.7.0",
