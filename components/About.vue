@@ -12,7 +12,7 @@
     <div class="desc-wrapper">
       <h1 class="title">About me 👋</h1>
       <p class="paragraph">
-        Hi, I'm Robert, a {{ getAge }} year old full stack web developer from
+        Hi, I'm Robert, a {{ getAge }} year old fullstack web developer from
         Vantaa, Finland. I currently work at
         <a
           class="link"
@@ -70,13 +70,13 @@
   </div>
 </template>
 <script>
-import { differenceInYears } from "date-fns";
+import { differenceInYears } from 'date-fns';
 
 export default {
-  name: "About",
+  name: 'About',
   computed: {
     getAge() {
-      const bDay = new Date("1997-02-04");
+      const bDay = new Date('1997-02-04');
 
       return differenceInYears(new Date(), bDay);
     },

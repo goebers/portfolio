@@ -6,10 +6,10 @@
           Site created with
           <a
             class="link"
-            href="https://nuxtjs.org/"
+            href="https://nuxt.com/"
             target="_blank"
             rel="noreferrer"
-            >Nuxt.js</a
+            >Nuxt</a
           >
           and served statically using
           <a
@@ -32,7 +32,7 @@
               rel="noreferrer"
               aria-label="Link to my LinkedIn profile"
             >
-              <LinkedInIcon class="icon" />
+              <svgo-linkedin class="icon" />
             </a>
             <a
               class="link"
@@ -41,7 +41,7 @@
               rel="noreferrer"
               aria-label="Link to my GitHub profile"
             >
-              <GitHubIcon class="icon" />
+              <svgo-github class="icon" />
             </a>
             <a
               class="link"
@@ -50,7 +50,7 @@
               rel="noreferrer"
               aria-label="Link to my Dribbble profile"
             >
-              <DribbbleIcon class="icon" />
+              <svgo-dribbble class="icon" />
             </a>
           </div>
         </div>
@@ -62,17 +62,12 @@
   </div>
 </template>
 <script>
-import LinkedInIcon from '~/assets/icons/linkedin.svg';
-import GitHubIcon from '~/assets/icons/github.svg';
-import DribbbleIcon from '~/assets/icons/dribbble.svg';
-
 export default {
   name: 'Footer',
-  components: { LinkedInIcon, GitHubIcon, DribbbleIcon },
-  data() {
-    return {
-      currentYear: new Date().getFullYear(),
-    };
+  computed: {
+    currentYear() {
+      return new Date().getFullYear();
+    },
   },
 };
 </script>
