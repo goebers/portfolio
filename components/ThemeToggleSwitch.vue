@@ -6,38 +6,35 @@
         type="checkbox"
         :checked="!isLightTheme"
         @click="changeTheme"
-      >
+      />
       <span class="theme-toggle__slider" />
     </label>
-    <label
-      for="theme-toggle-switch"
-      class="theme-toggle__label"
-    >
+    <label for="theme-toggle-switch" class="theme-toggle__label">
       Switch between themes
     </label>
   </div>
 </template>
 <script>
 export default {
-  name: 'ThemeToggleButton',
+  name: "ThemeToggleButton",
   computed: {
-    nextTheme () {
-      return this.$colorMode.value === 'light' ? 'dark' : 'light'
+    nextTheme() {
+      return this.$colorMode.value === "light" ? "dark" : "light";
     },
-    isLightTheme () {
-      return this.$colorMode.value === 'light'
-    }
+    isLightTheme() {
+      return this.$colorMode.value === "light";
+    },
   },
   methods: {
-    changeTheme () {
+    changeTheme() {
       if (this.isLightTheme) {
-        this.$colorMode.preference = 'dark'
+        this.$colorMode.preference = "dark";
       } else {
-        this.$colorMode.preference = 'light'
+        this.$colorMode.preference = "light";
       }
-    }
-  }
-}
+    },
+  },
+};
 </script>
 <style scoped lang="scss">
 .theme-toggle {
@@ -71,8 +68,8 @@ export default {
 
     &::before {
       position: absolute;
-      content: '';
-      background-image: url('~/assets/icon/theme_light.svg');
+      content: "";
+      background-image: url("~/assets/icons/theme_light.svg");
       background-size: 33px 33px;
       height: 33px;
       width: 33px;
@@ -108,7 +105,7 @@ export default {
         -webkit-transform: translateX(33px);
         -ms-transform: translateX(33px);
         transform: translateX(33px);
-        background-image: url('~/assets/icon/theme_dark.svg');
+        background-image: url("~/assets/icons/theme_dark.svg");
       }
 
       &:checked + .theme-toggle__slider {

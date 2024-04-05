@@ -9,20 +9,21 @@
             href="https://nuxtjs.org/"
             target="_blank"
             rel="noreferrer"
-          >Nuxt.js</a> and served statically using
+            >Nuxt.js</a
+          >
+          and served statically using
           <a
             class="link"
             href="https://www.digitalocean.com/products/app-platform/"
             target="_blank"
             rel="noreferrer"
-          >DigitalOcean App Platform</a>.
+            >DigitalOcean App Platform</a
+          >.
         </p>
       </div>
       <div class="footer-center">
         <div class="content">
-          <p class="small-paragraph">
-            Socials
-          </p>
+          <p class="small-paragraph">Socials</p>
           <div class="social-icons">
             <a
               class="link"
@@ -55,27 +56,25 @@
         </div>
       </div>
       <div class="footer-right">
-        <p class="small-paragraph">
-          © Robert Laitila {{ currentYear }}
-        </p>
+        <p class="small-paragraph">© Robert Laitila {{ currentYear }}</p>
       </div>
     </div>
   </div>
 </template>
 <script>
-import LinkedInIcon from '~/assets/icon/linkedin.svg?inline'
-import GitHubIcon from '~/assets/icon/github.svg?inline'
-import DribbbleIcon from '~/assets/icon/dribbble.svg?inline'
+import LinkedInIcon from '~/assets/icons/linkedin.svg';
+import GitHubIcon from '~/assets/icons/github.svg';
+import DribbbleIcon from '~/assets/icons/dribbble.svg';
 
 export default {
   name: 'Footer',
   components: { LinkedInIcon, GitHubIcon, DribbbleIcon },
-  data () {
+  data() {
     return {
-      currentYear: new Date().getFullYear()
-    }
-  }
-}
+      currentYear: new Date().getFullYear(),
+    };
+  },
+};
 </script>
 <style scoped lang="scss">
 .footer-content {
