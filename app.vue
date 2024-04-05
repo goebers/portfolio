@@ -1,15 +1,17 @@
 <template>
-  <div class="index-page container">
-    <h1 class="title">
-      Robert Laitila
-    </h1>
-    <About class="about-wrapper" />
-    <Divider class="divider-wrapper" />
-    <Skills class="skills-wrapper" />
-    <Divider class="divider-wrapper" />
-    <Contact class="contact-wrapper" />
-  </div>
+  <NuxtLayout>
+    <div class="index-page container">
+      <h1 class="title">Robert Laitila</h1>
+      <About class="about-wrapper" />
+      <Divider class="divider-wrapper" />
+      <Skills class="skills-wrapper" />
+      <Divider class="divider-wrapper" />
+      <Contact class="contact-wrapper" /></div
+  ></NuxtLayout>
 </template>
+<script>
+</script>
+
 <style scoped lang="scss">
 .index-page {
   width: 100%;
