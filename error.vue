@@ -1,26 +1,20 @@
 <template>
-  <div class="error-layout container">
-    <NuxtLayout name="default">
+  <NuxtLayout>
+    <div class="error-layout container">
       <div class="error-layout__content">
         <h1 v-if="error.statusCode === 404" class="title">Page not found ☠️</h1>
         <h1 v-else class="title">An unexpected error occurred ☠️</h1>
-        <a href="/" class="paragraph link" rel="noreferrer">
+        <NuxtLink to="/" class="paragraph link" rel="noreferrer">
           Let's get you back to the front page
-        </a>
+        </NuxtLink>
       </div>
-    </NuxtLayout>
-  </div>
+    </div>
+  </NuxtLayout>
 </template>
-<script>
-export default {
-  layout: 'error',
-  props: {
-    error: {
-      type: Object,
-      required: true,
-    },
-  },
-};
+<script setup>
+const props = defineProps({
+  error: Object,
+});
 </script>
 <style lang="scss">
 .error-layout {
