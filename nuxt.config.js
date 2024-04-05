@@ -4,42 +4,49 @@ export default defineNuxtConfig({
   head: {
     title: 'Robert Laitila - Fullstack Web Developer',
     htmlAttrs: {
-      lang: 'en'
+      lang: 'en',
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Robert Laitila portfolio' }
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'Robert Laitila portfolio',
+      },
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Titillium+Web:wght@300&display=swap', defer: true, async: true, preconnect: true }
-    ]
+      {
+        rel: 'stylesheet',
+        href: 'https://fonts.googleapis.com/css?family=Titillium+Web:wght@300&display=swap',
+        defer: true,
+        async: true,
+        preconnect: true,
+      },
+    ],
   },
-  css: [
-    '~/assets/scss/main.scss'
-  ],
-  styleResources: {
-    scss: [
-      '~/assets/scss/variables/*.scss',
-      '~/assets/scss/color-themes.scss'
-    ]
+  css: ['@/assets/scss/main.scss'],
+  vite: {
+    css: {
+      preprocessorOptions: {
+        scss: {
+          additionalData: `
+            @use "@/assets/scss/mixins/_color-theme.scss" as *;
+          `,
+        },
+      },
+    },
   },
   components: true,
-  modules: [
-    '@nuxtjs/eslint-module',
-    '@nuxtjs/stylelint-module',
-    '@nuxtjs/svg',
-    '@nuxtjs/style-resources',
-    '@nuxtjs/color-mode'
-  ],
+  modules: ['nuxt-svgo', '@nuxtjs/color-mode'],
   generate: {
-    fallback: true
+    fallback: true,
   },
   colorMode: {
     preference: 'system',
     fallback: 'light',
     classSuffix: '--theme',
-    storageKey: 'theme-mode'
-  }
-})
+    storageKey: 'theme-mode',
+  },
+});
