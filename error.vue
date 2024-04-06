@@ -12,9 +12,8 @@
   </NuxtLayout>
 </template>
 <script setup>
-const props = defineProps({
-  error: Object,
-});
+// eslint-disable-next-line vue/require-prop-types
+defineProps(['error']);
 </script>
 <style lang="scss">
 .error-layout {
