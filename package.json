@@ -3,11 +3,11 @@
   "version": "2.0.0",
   "private": true,
   "scripts": {
-    "dev": "nuxi dev",
-    "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "nuxt generate",
-    "lint": "eslint ."
+    "start": "nuxi dev",
+    "serve": "nuxi preview",
+    "generate": "nuxi generate",
+    "lint": "eslint .",
+    "cleanup": "npx nuxi cleanup"
   },
   "dependencies": {
     "@nuxtjs/color-mode": "^3.3.0",

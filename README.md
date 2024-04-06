@@ -1,20 +1,25 @@
-# nuxt-portfolio
+# portfolio / about me
 
-## Build Setup
+small little static site that works as a online CV / about me page
 
-```bash
-# install dependencies
-$ npm install
+## setting up & using
 
-# serve with hot reload at localhost:3000
-$ npm run dev
+developed with node v20.12.2 & npm v10.5.0
 
-# build for production and launch server
-$ npm run build
-$ npm run start
+install depedencies
 
-# generate static project
-$ npm run generate
-```
+`npm i`
 
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+run locally with hot reload etc.
+
+`npm start`
+
+build for prod & serve
+
+`npm run generate`
+
+`npm run serve`
+
+cleanup nuxt generated files & caches
+
+`npm run cleanup`
