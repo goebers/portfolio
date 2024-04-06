@@ -71,7 +71,7 @@ export default {
   },
 };
 </script>
-<style scoped lang="scss">
+<style lang="scss">
 .footer-content {
   display: flex;
   flex-direction: column;
