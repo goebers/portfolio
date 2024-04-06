@@ -41,7 +41,7 @@ export default defineNuxtConfig({
     },
   },
   components: true,
-  modules: ['nuxt-svgo', '@nuxtjs/color-mode'],
+  modules: ['nuxt-svgo', '@nuxtjs/color-mode', '@nuxtjs/eslint-module'],
   svgo: {
     defaultImport: 'component',
   },
