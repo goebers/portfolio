@@ -1,0 +1,16 @@
+{
+  "plugins": ["nuxt"], // eslint-plugin-nuxt
+  "extends": [
+    "@nuxt", // @nuxt/eslint-config
+    "plugin:prettier/recommended", //eslint-plugin-prettier/recommended"
+    "prettier", // eslint-config-prettier
+  ],
+  "env": {
+    "browser": true,
+    "node": true,
+  },
+  "rules": {
+    "vue/multi-word-component-names": "off",
+    "vue/no-reserved-component-names": "off",
+  },
+}

@@ -6,23 +6,24 @@
           Site created with
           <a
             class="link"
-            href="https://nuxtjs.org/"
+            href="https://nuxt.com/"
             target="_blank"
             rel="noreferrer"
-          >Nuxt.js</a> and served statically using
+            >Nuxt</a
+          >
+          and served statically using
           <a
             class="link"
             href="https://www.digitalocean.com/products/app-platform/"
             target="_blank"
             rel="noreferrer"
-          >DigitalOcean App Platform</a>.
+            >DigitalOcean App Platform</a
+          >.
         </p>
       </div>
       <div class="footer-center">
         <div class="content">
-          <p class="small-paragraph">
-            Socials
-          </p>
+          <p class="small-paragraph">Socials</p>
           <div class="social-icons">
             <a
               class="link"
@@ -31,7 +32,7 @@
               rel="noreferrer"
               aria-label="Link to my LinkedIn profile"
             >
-              <LinkedInIcon class="icon" />
+              <svgo-linkedin class="icon" />
             </a>
             <a
               class="link"
@@ -40,7 +41,7 @@
               rel="noreferrer"
               aria-label="Link to my GitHub profile"
             >
-              <GitHubIcon class="icon" />
+              <svgo-github class="icon" />
             </a>
             <a
               class="link"
@@ -49,35 +50,28 @@
               rel="noreferrer"
               aria-label="Link to my Dribbble profile"
             >
-              <DribbbleIcon class="icon" />
+              <svgo-dribbble class="icon" />
             </a>
           </div>
         </div>
       </div>
       <div class="footer-right">
-        <p class="small-paragraph">
-          © Robert Laitila {{ currentYear }}
-        </p>
+        <p class="small-paragraph">© Robert Laitila {{ currentYear }}</p>
       </div>
     </div>
   </div>
 </template>
 <script>
-import LinkedInIcon from '~/assets/icon/linkedin.svg?inline'
-import GitHubIcon from '~/assets/icon/github.svg?inline'
-import DribbbleIcon from '~/assets/icon/dribbble.svg?inline'
-
 export default {
   name: 'Footer',
-  components: { LinkedInIcon, GitHubIcon, DribbbleIcon },
-  data () {
-    return {
-      currentYear: new Date().getFullYear()
-    }
-  }
-}
+  computed: {
+    currentYear() {
+      return new Date().getFullYear();
+    },
+  },
+};
 </script>
-<style scoped lang="scss">
+<style lang="scss">
 .footer-content {
   display: flex;
   flex-direction: column;

@@ -1,0 +1,7 @@
+.nuxt
+node_modules
+.output
+dist
+public
+*.json
+*.svg

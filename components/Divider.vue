@@ -1,12 +1,12 @@
 <template>
   <div class="divider">
-    <hr>
+    <hr />
   </div>
 </template>
 <script>
 export default {
-  name: 'Divider'
-}
+  name: 'Divider',
+};
 </script>
 <style scoped lang="scss">
 .divider hr {

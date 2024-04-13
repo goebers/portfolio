@@ -3,33 +3,37 @@
     <div class="picture-wrapper">
       <img
         class="picture"
-        src="@/static/img/me.jpg"
+        src="~/public/img/me.jpg"
         alt="CV picture"
         width="500"
         height="500"
-      >
+      />
     </div>
     <div class="desc-wrapper">
-      <h1 class="title">
-        About me 👋
-      </h1>
+      <h1 class="title">About me 👋</h1>
       <p class="paragraph">
-        Hi, I'm Robert, a {{ getAge }} year old full stack web developer from Vantaa, Finland. I currently work at
+        Hi, I'm Robert, a {{ getAge }} year old fullstack web developer from
+        Vantaa, Finland. I currently work at
         <a
           class="link"
           href="https://www.giosg.com/"
           target="_blank"
           rel="noreferrer"
-        >giosg</a> and have been working in the industry since 2016.
+          >giosg</a
+        >
+        and have been working in the industry since 2016.
       </p>
       <p class="paragraph">
-        I finished my Bachelor of Engineering degree in Information and Communications Technology at
+        I finished my Bachelor of Engineering degree in Information and
+        Communications Technology at
         <a
           class="link"
           href="https://www.metropolia.fi/fi"
           target="_blank"
           rel="noreferrer"
-        >Metropolia University of Applied Sciences</a> in the spring of 2021.
+          >Metropolia University of Applied Sciences</a
+        >
+        in the spring of 2021.
       </p>
       <p class="paragraph">
         My previous education is from
@@ -38,36 +42,46 @@
           href="https://www.keuda.fi/"
           target="_blank"
           rel="noreferrer"
-        >Keuda vocational school</a>, where I studied information and communication technology with primary focus in software production.
+          >Keuda vocational school</a
+        >, where I studied information and communication technology with primary
+        focus in software production.
       </p>
       <p class="paragraph">
-        In my spare time, I like to stay active, spend time with my friends and family, and constantly try to learn new things. Currently I'm passionate about running, golf & renovating my apartment. I'm also part of a theater group where we do short plays.
+        In my spare time, I like to stay active, spend time with my friends and
+        family, and constantly try to learn new things. Currently I'm passionate
+        about running, golf & renovating my apartment. I'm also part of a
+        theater group where we do short plays.
       </p>
       <p class="paragraph">
-        There are three things I value at work above all: supportive atmosphere, smooth team work and room to grow. Currently I am well-versed in all areas of web development and am starting to look into other things that I can learn to further support my knowledge. If you want to check out my full work history, it's available on my
+        There are three things I value at work above all: supportive atmosphere,
+        smooth team work and room to grow. Currently I am well-versed in all
+        areas of web development and am starting to look into other things that
+        I can learn to further support my knowledge. If you want to check out my
+        full work history, it's available on my
         <a
           class="link"
           href="https://www.linkedin.com/in/robert-laitila-09307610b/"
           target="_blank"
           rel="noreferrer"
-        >LinkedIn profile</a>.
+          >LinkedIn profile</a
+        >.
       </p>
     </div>
   </div>
 </template>
 <script>
-import { differenceInYears } from 'date-fns'
+import { differenceInYears } from 'date-fns';
 
 export default {
   name: 'About',
   computed: {
-    getAge () {
-      const bDay = new Date('1997-02-04')
+    getAge() {
+      const bDay = new Date('1997-02-04');
 
-      return differenceInYears(new Date(), bDay)
-    }
-  }
-}
+      return differenceInYears(new Date(), bDay);
+    },
+  },
+};
 </script>
 <style scoped lang="scss">
 .about {

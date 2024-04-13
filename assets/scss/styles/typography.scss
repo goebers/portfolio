@@ -1,3 +1,8 @@
+@import './../mixins/color-theme';
+@import './../variables/breakpoints';
+@import './../variables/colors';
+@import './../variables/typography';
+
 ::selection {
   @include themed() {
     color: t('selection-text-color');

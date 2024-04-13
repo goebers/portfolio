@@ -1,26 +1,17 @@
 <template>
   <div class="skills">
-    <h1 class="title">
-      Skills 📈
-    </h1>
+    <h1 class="title">Skills 📈</h1>
     <p class="paragraph">
-      Listed below are some (not all) technologies, methods and platforms that I have used previously, and feel competent working with.
+      Listed below are some (not all) technologies, methods and platforms that I
+      have used previously, and feel competent working with.
     </p>
     <div class="skills-list-wrapper">
-      <div
-        v-for="skill in skillsList"
-        :key="skill.title"
-        class="skills-list"
-      >
+      <div v-for="skill in skillsList" :key="skill.title" class="skills-list">
         <h2 class="small-title">
           {{ skill.title }}
         </h2>
         <ul>
-          <li
-            v-for="value in skill.values"
-            :key="value"
-            class="list-item"
-          >
+          <li v-for="value in skill.values" :key="value" class="list-item">
             <div class="list-item__content">
               <p class="small-paragraph">
                 {{ value }}
@@ -35,7 +26,7 @@
 <script>
 export default {
   name: 'Skills',
-  data () {
+  data() {
     return {
       skillsList: [
         {
@@ -44,8 +35,8 @@ export default {
             'TypeScript',
             'React / Vue / Angular',
             'WordPress',
-            'Magento 2'
-          ]
+            'Magento 2',
+          ],
         },
         {
           title: 'Backends / APIs',
@@ -56,8 +47,8 @@ export default {
             'Express.js',
             'GraphQL',
             'Prisma',
-            'NestJS'
-          ]
+            'NestJS',
+          ],
         },
         {
           title: 'Mobile',
@@ -65,87 +56,45 @@ export default {
             'Ionic (Hybrid)',
             'Kotlin (Native Android)',
             'Swift (Native iOS)',
-            'Java (Native Android)'
-          ]
+            'Java (Native Android)',
+          ],
         },
         {
           title: 'Databases',
-          values: [
-            'MySQL / MariaDB',
-            'PostgreSQL',
-            'ClickHouse',
-            'MongoDB'
-          ]
+          values: ['MySQL / MariaDB', 'PostgreSQL', 'ClickHouse', 'MongoDB'],
         },
         {
           title: 'Testing',
-          values: [
-            'Postman',
-            'BrowserStack',
-            'Cypress',
-            'Lighthouse',
-            'Jest'
-          ]
+          values: ['Postman', 'BrowserStack', 'Cypress', 'Lighthouse', 'Jest'],
         },
         {
           title: 'Infra',
-          values: [
-            'Docker',
-            'Drone',
-            'Jenkins',
-            'Kubernetes',
-            'Proxmox'
-          ]
+          values: ['Docker', 'Drone', 'Jenkins', 'Kubernetes', 'Proxmox'],
         },
         {
           title: 'Design',
-          values: [
-            'Figma',
-            'Zeplin',
-            'Sketch',
-            'Adobe XD'
-          ]
+          values: ['Figma', 'Zeplin', 'Sketch', 'Adobe XD'],
         },
         {
           title: 'VCS & VCS platforms',
-          values: [
-            'Git',
-            'GitHub',
-            'Bitbucket',
-            'GitLab',
-            'Subversion'
-          ]
+          values: ['Git', 'GitHub', 'Bitbucket', 'GitLab', 'Subversion'],
         },
         {
           title: 'Package management',
-          values: [
-            'NPM',
-            'Yarn',
-            'Homebrew',
-            'Composer'
-          ]
+          values: ['NPM', 'Yarn', 'Homebrew', 'Composer'],
         },
         {
           title: 'Miscellaneous',
-          values: [
-            'Superset',
-            'Zeppelin',
-            'Apache Airflow',
-            'Bash scripting'
-          ]
+          values: ['Superset', 'Zeppelin', 'Apache Airflow', 'Bash scripting'],
         },
         {
           title: 'Operating systems',
-          values: [
-            'Windows',
-            'Linux',
-            'MacOS'
-          ]
-        }
-      ]
-    }
-  }
-}
+          values: ['Windows', 'Linux', 'MacOS'],
+        },
+      ],
+    };
+  },
+};
 </script>
 <style scoped lang="scss">
 .skills {

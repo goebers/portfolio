@@ -1,8 +1,6 @@
 <template>
   <div class="index-page container">
-    <h1 class="title">
-      Robert Laitila
-    </h1>
+    <h1 class="title">Robert Laitila</h1>
     <About class="about-wrapper" />
     <Divider class="divider-wrapper" />
     <Skills class="skills-wrapper" />
