@@ -4,7 +4,7 @@ small little static site that works as a online CV / about me page
 
 ## setting up & using
 
-developed with node v20.12.2 & npm v10.5.0
+developed with node `20.12.2` & npm `10.5.0`
 
 install depedencies
 

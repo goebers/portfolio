@@ -7,6 +7,9 @@
     "serve": "nuxi preview",
     "generate": "nuxi generate",
     "lint": "eslint .",
+    "format": "prettier . --write",
+    "format:check": "prettier . --check",
+    "format:debug-check": "prettier . --debug-check",
     "cleanup": "npx nuxi cleanup"
   },
   "dependencies": {
