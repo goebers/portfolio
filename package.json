@@ -3,7 +3,8 @@
   "version": "2.0.0",
   "private": true,
   "scripts": {
-    "start": "nuxi dev",
+    "start": "npx serve .output/public",
+    "dev": "nuxi dev",
     "serve": "nuxi preview",
     "generate": "nuxi generate",
     "lint": "eslint .",
